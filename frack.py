@@ -1,13 +1,12 @@
 #!/bin/python3
 # -*- coding: utf-8 -*-
 #########################################################################################################
-# Requirements: pyarrow, google-cloud-bigquery-storage
-#########################################################################################################
 # Remember to export the location of the service account key!                                           #
 # export GOOGLE_APPLICATION_CREDENTIALS=/home/stingray/TestingBigQuery-1209d661662d.json                #
 #########################################################################################################
 # TODO: DELETE FROM `testingbigquery-306308.Breach_Data.Breach_Data` WHERE site IS NULL AND breach IS NULL
 # TODO: Add bulk parsing
+# TODO: Add single e-mail query
 #########################################################################################################
 # Examples: ./frack.py parse -p -i wattpad_24133700_lines.txt -y 2021 -n None -w wattpad.com            #
 # ./frack.py parse -p -y 2019 -n Collection#1 -w 3dsiso.com -d -u -i Collection#1_3DSISO.com_2019.csv   #
@@ -89,13 +88,13 @@ def stats(what, export):
     if what == "web":
         sql_query = """
         SELECT DISTINCT site, Count(site) as number,
-        FROM `testingbigquery-306308.Breach_Data.Breach_Data` 
+        FROM `""" + project_name + '.' + table_id +"""` 
         GROUP BY site ORDER BY number desc
         """
     elif what == "breach":
         sql_query = """
         SELECT DISTINCT breach, Count(breach) as number,
-        FROM `testingbigquery-306308.Breach_Data.Breach_Data` 
+        FROM `""" + project_name + '.' + table_id +"""` 
         GROUP BY breach ORDER BY number desc 
         """
     print("Querying Breach Database...")
@@ -153,7 +152,7 @@ def show_top_passwords(size, export):
         
     sql_top = """
     SELECT DISTINCT password, COUNT(password) as used
-    FROM `testingbigquery-306308.Breach_Data.Breach_Data`
+    FROM `""" + project_name + '.' + table_id +"""` 
     GROUP BY password ORDER BY used desc limit """+ size + """
     """
 
@@ -350,7 +349,7 @@ def search(args):
         
     sql_search = """
     SELECT *
-    FROM `testingbigquery-306308.Breach_Data.Breach_Data`
+    FROM `""" + project_name + '.' + table_id +"""` 
     WHERE UPPER(domain) = UPPER(""" + '"' + '") OR UPPER(domain)=UPPER("'.join(domains) + '")' + """
     """
     print("Querying Breach Database...")
@@ -397,7 +396,6 @@ def splash():
 #########################################################################################################
 def count_dataset():
     client = bigquery.Client()
-    table_id = 'Breach_Data.Breach_Data'
     try:
         destination_table = client.get_table(table_id)
         print("Current DB Consists of {:,} rows.".format(destination_table.num_rows))
@@ -531,18 +529,17 @@ def create_excel(csv_name, singledomain, passwords):
             clean_pass.append(val)
     
     # Add a count to the passwords in a tuple so we can use it later.
-    if len (clean_pass) != 0:
-        word=clean_pass[0]
-        count=0
-        for i in clean_pass:
-            if word == i and word != "":
-                count = count +1
-            else:
-                topTen.append((count,word))
-                word=i
-                count =1
-        topTen.sort()
-        topTen.reverse()
+    word=clean_pass[0]
+    count=0
+    for i in clean_pass:
+        if word == i and word != "":
+            count = count +1
+        else:
+            topTen.append((count,word))
+            word=i
+            count =1
+    topTen.sort()
+    topTen.reverse()
 
     # Use the first 10 items in our tuple to write in the sheet.
     for i in range(min(10, len(topTen))):
