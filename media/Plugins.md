@@ -21,7 +21,7 @@ Here we can keep track of the plugins and for which breach they are.
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
 
-[2015-patreon_com.py]: <../parsers/2015-patreon_com.py>
+[2015-patreon_com.py]: <https://github.com/StingraySA/Frack/blob/main/parsers/2015-patreon_com.py>
 [2021-123rf_com.py]: <>
 [2021-nitropdf_com.py]: <>
 [2021-wish_com.py]: <>
