@@ -1,0 +1,4 @@
+.idea/
+/media
+__pycache__/
+*.orc
