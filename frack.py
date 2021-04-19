@@ -15,7 +15,7 @@
 #########################################################################################################
 
 import argparse, csv, importlib
-import os, sys, time, six
+import os, sys, time, io
 from string import ascii_uppercase
 
 from google.cloud import bigquery
@@ -447,7 +447,8 @@ def ingest_orc(delete):
     job_config = bigquery.LoadJobConfig(
         schema=schema,
     )
-    body = six.BytesIO(b",,,,,,,")
+    body = io.BytesIO(b",,,,,,,")
+    #body = six.BytesIO(b",,,,,,,")
     #body = b",,,,,,,"
     client.load_table_from_file(body, table_id, job_config=job_config).result()
     previous_rows = client.get_table(table_id).num_rows

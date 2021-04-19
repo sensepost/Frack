@@ -1,28 +1,42 @@
-# Step 2 - Configuring your Cloud infrastructure
+# Step 2 - Ingesting your first data
 
-Log into [console.cloud.google.com](https://console.cloud.google.com) using your google creds. If you do not have a google account, this is a good time to create one. Once logged in you can start your 90-day trial. They give you $300 to play around with their stuff, but we will not be using any of these tools in this project.
+Now that you have got your cloud infra set up, let’s ingest your first data set.
+First export your admin key path using below command:
 
-Go to BigQuery and start a new project.
+`export GOOGLE_APPLICATION_CREDENTIALS=/home/stingray/<your admin key>.json`
 
-![Image02](media/Image_002.png)
+I’ve included a small sample in the demo directory. The file is in `<email>:<password>` format, so we just quickly need to replace the colons with commas to make it a valid .csv file.
 
-Now you have got your first project created, you can configure the access control. I have opted for the Google managed keys. Go to IAM & Admin -> Service Accounts. Add a new user askmenicely and give the user a Viewer role. Once the user has been created, click on the menu on the right and select manage keys. Create a new JSON key for this user and save it somewhere.
+`sed "s/:/,/g" -i 35k_Wish.com_2021_Stranded.txt`
 
-![Image03](media/Image_003.png)
+Now that our file is ready for parsing, you can run it through Frack using the command below:
 
-![Image04](media/Image_004.png)
+`./frack.py parse -p -y 2021 -n None -w Wish.com -d -u -i 35k_Wish.com_2021_Stranded.txt`
 
-Next you need to add your admin account. Once again name your account, but this time assign it the role Owner. Do exactly the same for the admin account and save the key somewhere.
-Next, we need to create a storage bucket to ingest our .orc files from. Go to storage and create a regular storage bucket. I named mine ingesting_bucket.
+| Argument | Meaning |
+|---|---|
+|parse|	The first parameter is the module to use. We will be using the parse module. |
+|-p| Our file contains passwords |
+|-y|The year the breach happened |
+|-n|The Name of the breach. Since this is just a single website and not part of a combo or a collection of breaches, I prefer to use None.|
+|-w|The website that the data relates to|
+|-d|I don’t want to delete the .error file. All errors found while parsing will be flushed to a .error file for further analysis.|
+|-u|After parsing and conversion, upload the file to our storage bucket.|
+|-i|The input file name.|
 
-![Image05](media/Image_005.png)
+And you should get an output similar to below:
 
-Click on configuration. Here you will find the info required to access your bucket. You will need to enter this in Frack.
+![Image08](media/Image_008.png)
 
-![Image06](media/Image_006.png)
+Now to ingest the file into the database, run below:
 
-That’s it. Now your cloud infra is ready for some data. Now add the data of your environment to Frack by editing the frack.py file.
+`./frack.py db -n`
 
-![Image07](media/Image_007.png)
+| Argument | Meaning |
+|---|---|
+|db|We will be using the db module since we’re talking to the db.|
+|-n|Trigger the ingestion and import the files into your new database.|
 
-[Step 3 - Ingesting your first data](media/Step3.md)
+The file will be ingested. Note that it may take a while if you ingest massive data sets.
+
+![Image09](media/Image_009.png)

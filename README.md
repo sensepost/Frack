@@ -50,6 +50,8 @@ This module’s sole purpose is to first clean up the data by performing these c
 - Validate that the e-mail address is valid by using validate_email from [https://github.com/syrusakbary/validate_email](https://github.com/syrusakbary/validate_email)
 - Do some rubbish removal of lines with blank fields and non-ascii characters.
 
+The parse module now supports plugins. This will allow importing of a raw dump no matter what format it was dumped in to be parsed into Frack format alleviating the pain associated with extracting the data into a clean usable dataset. To see if your breach is supported by a plugin you can search for the SHA-1 of the file on the [Plugins](/media/Plugins.md) page.
+
 The parse module has got several arguments. The default input file format is `<email>,<hash>`. If your file differs, you need to use flags to specify what data your file contains.
 |Argument|What it does|
 |--|--|
@@ -91,10 +93,9 @@ The query module allows you to query the dataset for domains. The output will be
 | -d / --singledomain `<domain>` | Specify a single domain to query. |
 
 # Quick guided run through
-1. [Downloading and compiling orc-tools and setting up the environment.](/media/Step1.md)
-2. [Configuring your Cloud infrastructure.](/media/Step2.md)
-3. [Converting and Ingesting your first data.](/media/Step3.md)
-4. [Converting and Ingesting using a plugin.](/media/Step4.md)
+1. [Configuring your local and Cloud infrastructure](/media/Step1.md)
+2. [Converting and Ingesting your first data.](/media/Step2.md)
+3. [Converting and Ingesting using a plugin.](/media/Step3.md)
 
 ## License
 `Frack` is licensed under a [GNU General Public v3 License](https://www.gnu.org/licenses/gpl-3.0.en.html). Permissions beyond the scope of this license may be available at [http://sensepost.com/contact/](http://sensepost.com/contact/).
