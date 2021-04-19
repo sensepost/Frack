@@ -6,6 +6,7 @@ class Parse(base.Parser):
     """
         A 123rf.com breach data parser
         Source File SHA-1: 28f439448b7a8237e62847d4df48b95d42c1fec4  123rf.com member.sql
+        Good Lines: 8,292,274
     """
 
     name = "None"

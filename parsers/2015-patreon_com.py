@@ -6,6 +6,7 @@ class Parse(base.Parser):
     """
         Patreon.com 2015 breach data parser
         Source File SHA-1: a60acd81dd95c51bedfc056e4caeda86b70ed0d0  patreon.sql
+        Good Lines: 2,209,954
     """
 
     name = "None"

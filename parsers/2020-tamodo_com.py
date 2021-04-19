@@ -6,6 +6,7 @@ class Parse(base.Parser):
     """
         Tamodo.com 2020 breach data parser
         Source File SHA-1: c8a2ee7508fb3bce0a3aab8a2244757b0540f0c7  103.205.96.158.affiliate_master_dev.users.txt
+        Good Lines: 440,110
     """
 
     name = "None"

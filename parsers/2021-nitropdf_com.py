@@ -6,6 +6,7 @@ class Parse(base.Parser):
     """
         NitroPDF.com 2021 breach data parser
         Source File SHA-1: 50dbf53333ef77ef59cd170be4c33931e613b8d9  nitrocloud.tsv
+        Good Lines: 76,856,990
     """
 
     name = "None"
