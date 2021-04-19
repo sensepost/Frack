@@ -1,5 +1,8 @@
 ![Head](/media/Head.png)
 
+[![Twitter](https://img.shields.io/badge/twitter-Stingray__ZA-blue)](https://twitter.com/Stingray_ZA)
+[![PyPI](https://img.shields.io/pypi/v/Frack)](https://)
+
 ## What is Frack?
 
 Frack is my attempt at creating an end-to-end solution to store, manage and query your breach data. The tool has got a very basic workflow making it easy to use.
@@ -11,6 +14,10 @@ Frack is my attempt at creating an end-to-end solution to store, manage and quer
 Well, I wanted something that was easy to use, didn’t cost millions of dollars and was quick. The python is easy to read and understand so hopefully you will get a better understanding of interacting with your database using python while learning about all the awesome cloud stuff that’s available.
 
 ## Let’s get into it.
+Frack has been updated to use custom plugins to make it easier to parse raw breach data. The SHA-1 hashes of the breach files will be posted on the [Plugins](/media/Plugins.md) page to make it easy to find the correct plugin for your dataset. These plugins will be updated as new breaches are released. If you feel like contributing, you are more than welcome to add your own parsers.
+
+Should you have a breach that is not supported by a plugin, you can still manually parse the file if you can get in one of the following .csv formats.
+
 Frack supports these .csv file formats:
 
 `<email>,<password>`
@@ -47,6 +54,7 @@ The parse module has got several arguments. The default input file format is `<e
 |Argument|What it does|
 |--|--|
 | -i / --inputfile `<file>`| File to import data from. This is your cleaned .csv file.|
+| -m / --module `<module name>` | Use a plugin module to import a raw breach. |
 | -y / --year `<year>`| The year the breach / combo / collection was released. |
 | -n / --name `<name>`| The name of the breach / combo / collection. |
 | -w / --website `<website>`| The website address of the site in question. |
@@ -86,3 +94,7 @@ The query module allows you to query the dataset for domains. The output will be
 1. [Downloading and compiling orc-tools and setting up the environment.](/media/Step1.md)
 2. [Configuring your Cloud infrastructure.](/media/Step2.md)
 3. [Converting and Ingesting your first data.](/media/Step3.md)
+4. [Converting and Ingesting using a plugin.](/media/Step4.md)
+
+## License
+`Frack` is licensed under a [GNU General Public v3 License](https://www.gnu.org/licenses/gpl-3.0.en.html). Permissions beyond the scope of this license may be available at [http://sensepost.com/contact/](http://sensepost.com/contact/).
