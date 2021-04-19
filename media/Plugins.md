@@ -27,4 +27,6 @@ Here we can keep track of the plugins and for which breach they are.
 [2021-123rf_com.py]: <https://github.com/StingraySA/Frack/blob/main/parsers/2021-123rf_com.py>
 [2021-nitropdf_com.py]: <https://github.com/StingraySA/Frack/blob/main/parsers/2021-nitropdf_com.py>
 [2021-wish_com.py]: <https://github.com/StingraySA/Frack/blob/main/parsers/2021-wish_com.py>
-[2020-tamodo_com.py]: <>
+[2020-tamodo_com.py]: <../parsers/2020-tamodo_com.py>
+[2020-wattpad_com.py]: <../parsers/2020-wattpad_com.py>
+[2020-wattpad_com1.py]: <../parsers/2020-wattpad_com1.py>
