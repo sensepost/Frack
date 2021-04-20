@@ -40,7 +40,6 @@ class Parse(base.Parser):
                 pw_hash = field.split(',')[0].replace('\'', '').replace(' ', '').strip()
                 
         domain = email.split('@')[1] if '@' in email else ''
-        print(f'{email}:{pw_hash}:{domain}')
         return self.name, self.web, int(self.year), domain, email, '', pw_hash, ''
 
     def process_rows(self) -> collections.Iterable[tuple]:
