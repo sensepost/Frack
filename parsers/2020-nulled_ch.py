@@ -16,7 +16,18 @@ class Parse(base.Parser):
 
     def row_format(self, r: str) -> tuple:
         """
-            Header: 
+            Header: {
+                "username": "null",
+                "userid": "1",
+                "hash": "873ef8332a6c6fbf1b64772f9f770586",
+                "salt": "6bqb8q8c",
+                "regdate": "1529209555",
+                "email": "admin@nulledforums.org",
+                "lastactive": "1589925401",
+                "dob": "",
+                "registryip": null,
+                "lastip": null
+            },
 
            name,website,year,domain,email,password,hash,salt
 
