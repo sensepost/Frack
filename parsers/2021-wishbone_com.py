@@ -57,16 +57,6 @@ class Parse(base.Parser):
 
         row = r.split(',')
 
-        '''
-        email = pw_hash = domain = ""
-        for field in r:
-            if len(field) == 32:
-                pw_hash = field
-            if '@' in field:
-                email = field
-        domain = email.split('@')[1] if '@' in email else ''
-        print(f'{email},{domain},{pw_hash}')
-        '''
         if len(row) == 32:
                 email = row[2].replace('\'', '').strip()
                 pw_hash = row[16].replace('\'', '').strip()
