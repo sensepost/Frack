@@ -10,6 +10,7 @@ Here we can keep track of the plugins and for which breach they are.
 | 2021 | [123rf.com][P_151] | 8,292,274 | 28f439448b7a8237e62847d4df48b95d42c1fec4 | 123rf.com_member.sql | [2021-123rf_com.py] | [Me :)] |
 | 2021 | [Nitro_PDF][P_152] | 76,856,990 | 50dbf53333ef77ef59cd170be4c33931e613b8d9 | nitrocloud.tsv | [2021-nitropdf_com.py] | [Me :)] |
 | 2021 | Not Confirmed | 35,376 | cf475b17a7ed3fee45d17ccb57763c7a5c99ad9d | 35k_Wish.com_2021_Stranded.txt | [2021-wish_com.py] | [@leonjza] |
+| 2020 | [BigBasket.com][P_160] | 20,489,857 | a4dd21b5ca4e98c82417262f82957005de2db637 | bb.sql | [2020-bigbasket_com.py] | [Me :)] |
 | 2020 | [Nulled.ch][P_159] | 35,697 | 4c6c58d35d8db2ce974ee8b5264bc8ff6d53c846 | nulledch.json | [2020-nulled_ch.py] | [Me :)] |
 | 2020 | [Appen.com][P_158] | 1,219,865 | 97248cc3aa42dd3a6bd6b80df88a6d26b630c294 | Appen.txt | [2021-appen_com.py] | [Me :)] |
 | 2020 | [Wattpad Breach][P_155] | 269,631,125</br>23,987,479 | dea79791e87043a3f76e4d75f33855c7278b0197 </br>af9ddbc8138b013c80c882cb109991bd689c25d1 | cleaned.csv</br>wattpad_24133700_lines.txt | [2020-wattpad_com.py]<br/>[2020-wattpad_com1.py] | [Me :)] |
@@ -27,6 +28,7 @@ Here we can keep track of the plugins and for which breach they are.
 [P_157]: <https://haveibeenpwned.com/PwnedWebsites#Wishbone2020>
 [P_158]: <https://haveibeenpwned.com/PwnedWebsites#Appen>
 [P_159]: <https://haveibeenpwned.com/PwnedWebsites#NulledCH>
+[P_160]: <https://haveibeenpwned.com/PwnedWebsites#bigbasket>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -42,3 +44,4 @@ Here we can keep track of the plugins and for which breach they are.
 [2021-wishbone_com.py]: <../parsers/2021-wishbone_com.py>
 [2021-appen_com.py]: <../parsers/2021-appen_com.py>
 [2020-nulled_ch.py]: <../parsers/2020-nulled_ch.py>
+[2020-bigbasket_com.py]: <../parsers/2020-bigbasket_com.py>
