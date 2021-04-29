@@ -10,6 +10,7 @@ google.cloud
 pyarrow
 google-cloud-bigquery
 google-cloud-storage
+google-cloud-bigquery-storage
 google
 google.cloud
 pyorc

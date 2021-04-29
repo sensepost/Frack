@@ -5,7 +5,7 @@ from parsers import base
 class Parse(base.Parser):
     """
         Bigbasket.com breach data parser
-        Source File SHA-1: 
+        Source File SHA-1: a4dd21b5ca4e98c82417262f82957005de2db637 bb.sql
         Good Lines: 20,489,857
     """
 
