@@ -63,6 +63,9 @@ class Parser(ABC):
 
         if password == '' and hash == '':
             return False
+        
+        if (hash != '') and (password != '') and (len(hash) < 16): # The shortest hash in general use is the MYSQL3 (16 chars)
+            return False
 
         if domain == '':
             return False
