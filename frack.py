@@ -7,14 +7,13 @@
 # TODO: DELETE FROM `testingbigquery-306308.Breach_Data.Breach_Data` WHERE site IS NULL AND breach IS NULL
 # TODO: Add bulk parsing
 # TODO: Add single e-mail query
-# TODO: Add parse modules to parse certain breaches directly from source
 #########################################################################################################
 # Examples: ./frack.py parse -p -i wattpad_24133700_lines.txt -y 2021 -n None -w wattpad.com            #
 # ./frack.py parse -p -y 2019 -n Collection#1 -w 3dsiso.com -d -u -i Collection#1_3DSISO.com_2019.csv   #
 #########################################################################################################
 
 import argparse, csv, importlib
-import os, sys, time, io
+import os, sys, time, io, pyorc, re
 from string import ascii_uppercase
 
 from google.cloud import bigquery
@@ -23,7 +22,6 @@ from google.cloud.exceptions import NotFound
 from hurry.filesize import size, verbose
 from openpyxl import Workbook
 from tabulate import tabulate
-from validate_email import validate_email
 
 # Change these to match your environment.
 project_name = "testingbigquery-306308"
@@ -34,9 +32,11 @@ bucket_uri = "gs://ingesting_bucket/*.orc"
 # table_id = 'Breach_Data.Part_Data'
 table_id = 'Breach_Data.Breach_Data'
 
-# This is from orctools. Path to the compiled app csv_import.
-path_to_csv_import = '../../Dropbox/Assessments/frack-master/frack-master/'
-
+# static structure for pyorc files
+pyorc_struct = ("struct<"
+                "breach:string,site:string,year:int,domain:string,email:string,"
+                "password:string,hash:string,salt:string"
+                ">")
 
 class txtcolors:
     HEADER = '\033[95m'
@@ -302,12 +302,10 @@ def parse(args):
         mytup = []
         domain = ''
         destination = "Frack_Export" + "." + args.name + "." + args.website + ".orc"
-        errorfile = open(args.inputfile + ".error", "a")
         with open(args.inputfile, "r") as csvfile:
             reader = csv.reader((line.replace('\0', '') for line in csvfile), delimiter=',')
             with open(destination, 'wb') as data:
-                with pyorc.Writer(data,
-                                  "struct<breach:string,site:string,year:int,domain:string,email:string,password:string,hash:string,salt:string>") as writer:
+                with pyorc.Writer(data, pyorc_struct) as writer:
                     for row in reader:
                         if validate_data(row):
                             domain = row[0].split('@')[1]
@@ -320,24 +318,18 @@ def parse(args):
                             writer.write(tuple(mytup))
                             writecount += 1
                         else:
-                            errorfile.write(str(row))
                             errorcount += 1
                 writecount_formatted = '{:,}'.format(writecount)
                 errorcount_formatted = '{:,}'.format(errorcount)
                 sys.stdout.write("\rGood Lines: %s Bad Lines: %s" % (writecount_formatted, errorcount_formatted))
                 sys.stdout.flush()
-            errorfile.close()
             sys.stdout.write('\n')
             print(txtcolors.OKBLUE + "Size of import file: " + file_size(args.inputfile) + txtcolors.ENDC)
-            print(txtcolors.OKBLUE + "Size of errors file: " + file_size(args.inputfile + '.error') + txtcolors.ENDC)
-            print(
-                txtcolors.OKGREEN + "File saved as: " + "Frack_Export" + "." + args.name + "." + args.website + ".orc" + txtcolors.ENDC)
-            print(txtcolors.OKBLUE + "ORC Size: " + file_size(
-                "Frack_Export" + "." + args.name + "." + args.website + ".orc") + txtcolors.ENDC)
+            print(txtcolors.OKGREEN + "File saved as: " + "Frack_Export" + "." + args.name + "." + args.website + ".orc" + txtcolors.ENDC)
+            print(txtcolors.OKBLUE + "ORC Size: " + file_size("Frack_Export" + "." + args.name + "." + args.website + ".orc") + txtcolors.ENDC)
             if args.upload:
                 print(txtcolors.OKGREEN + "Uploading .orc to bucket ..." + txtcolors.ENDC)
                 upload_blob(bucket_name, "Frack_Export" + "." + args.name + "." + args.website + ".orc")
-
 
 #########################################################################################################
 # Perform the DB maintenance commands specified in args.                                                #
