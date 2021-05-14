@@ -4,14 +4,14 @@ from parsers import base
 
 class Parse(base.Parser):
     """
-        yahoo.com breach data parser
-        Source File SHA-1: 54a19fb48d6e04564c60788b951041d0ee9c8e7d  2012-Yahoo.com_77kk.txt
-        Good Lines: 76,420,481
+        iMesh.com breach data parser
+        Source File SHA-1: a394d54457f4b7450d3afb348794e6d10f6bcbb5  2013-iMesh.com_44kk_[+8kk_new_records].txt
+        Good Lines: 43,879,389
     """
 
     name = "None"
-    web = "yahoo.com"
-    year = "2012"
+    web = "iMesh.com"
+    year = "2013"
 
     def row_format(self, r: str) -> tuple:
         """
