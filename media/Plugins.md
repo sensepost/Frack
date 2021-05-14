@@ -8,7 +8,7 @@ Here we can keep track of the plugins and for which breach they are.
 | 2021 | [Wishbone.com][P_157] | 9,082,166 | e938ab6a93d48ba64179adcb7871767b8bf0cde4 | `users.sql` | [2021-wishbone_com.py] | [Me :)] |
 | 2021 | [MeetMindful.com][P_156] | 1,270,930 | 32899271f14797127fe8e57b13d78237f1b211fb | `mindful` | [2021-meetmindful_com.py] | [Me :)] |
 | 2021 | [123rf.com][P_151] | 8,292,274 | 28f439448b7a8237e62847d4df48b95d42c1fec4 | `123rf.com_member.sql` | [2021-123rf_com.py] | [Me :)] |
-| 2021 | [Nitro_PDF][P_152] | 76,856,990 | 50dbf53333ef77ef59cd170be4c33931e613b8d9 | `nitrocloud.tsv` | [2021-nitropdf_com.py] | [Me :)] |
+| 2021 | [Nitro_PDF][P_152] | 77,082,678 | 50dbf53333ef77ef59cd170be4c33931e613b8d9 | `nitrocloud.tsv` | [2021-nitropdf_com.py] | [Me :)] |
 | 2021 | Not Confirmed | 35,376 | cf475b17a7ed3fee45d17ccb57763c7a5c99ad9d | `35k_Wish.com_2021_Stranded.txt` | [2021-wish_com.py] | [@leonjza] |
 | 2020 | [MobiFriends.com][P_161] | 3,640,926<br>127,217 | 3944a67b7375bc15437db8d0c3812eedf7070673<br>74e5468872c80fbc02f7f87bdddd8e582761fc9e | `mobifriends-users.sql`<br>`MobiFriends.com_DataBase.txt` | [2020-mobifriends_com.py]<br>[2020-mobifriends_com1.py] | [Me :)] |
 | 2020 | [BigBasket.com][P_160] | 20,489,857 | a4dd21b5ca4e98c82417262f82957005de2db637 | `bb.sql` | [2020-bigbasket_com.py] | [Me :)] |
@@ -22,8 +22,7 @@ Here we can keep track of the plugins and for which breach they are.
 | 0 | 0 | 0 | 0 | `2018-Dubsmash.com 12.3kk.txt` | 0 | 0 |
 | 0 | 0 | 0 | 0 | `2018-Chegg.com 29kk.txt` | 0 | 0 |
 | 0 | 0 | 0 | 0 | `2018-Animoto.com 13.3kk.txt` | 0 | 0 |
-| 0 | 0 | 0 | 0 | `2017-Myheritage.com 81kk.txt` | 0 | 0 |
-| 0 | 0 | 0 | 0 | `2017-MyHeritage.com 23kk.txt` | 0 | 0 |
+| 0 | 0 | 0<br>0 | 0<br>0 | `2017-Myheritage.com 81kk.txt`<br>`2017-MyHeritage.com 23kk.txt` | 0<br>0 | 0<br>0 |
 | 0 | 0 | 0 | 0 | `2016-Mate1.com 27.5kk.txt` | 0 | 0 |
 
 

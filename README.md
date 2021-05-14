@@ -47,8 +47,9 @@ Now let’s go through the modules. The tool consists of three modules. A query 
 This module’s sole purpose is to first clean up the data by performing these checks:
 
 - The fields must equal that of the selected input. This is two fields for `<email>,<password>` and `<email>,<hash>` and then three fields for `<email>,<hash>,<salt>`.
-- Validate that the e-mail address is valid by using validate_email from [https://github.com/syrusakbary/validate_email](https://github.com/syrusakbary/validate_email)
+- Validate that the e-mail address is valid by using some RegEx.
 - Do some rubbish removal of lines with blank fields and non-ascii characters.
+- Check that the hash is longer than 16 chars. If it's shorter it's probably trash.
 
 The parse module now supports plugins. This will allow importing of a raw dump no matter what format it was dumped in to be parsed into Frack format alleviating the pain associated with extracting the data into a clean usable dataset. To see if your breach is supported by a plugin you can search for the SHA-1 of the file on the [Plugins](/media/Plugins.md) page.
 

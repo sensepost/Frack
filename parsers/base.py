@@ -2,8 +2,7 @@ import collections
 from abc import ABC, abstractmethod
 
 import pyorc
-from validate_email import validate_email
-
+import re
 
 class Parser(ABC):
 
@@ -52,19 +51,22 @@ class Parser(ABC):
 
             :return:
         """
+        # Regex for validating an E-Mail address
+        email_regex = '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
 
         if len(r) < 8:
             return False
 
         _, _, _, domain, email, password, hash, _ = r
 
-        if not validate_email(email, check_regex=True, check_mx=False):
+        if ( not re.search(email_regex, email)):
             return False
 
         if password == '' and hash == '':
             return False
         
         if (hash != '') and (password != '') and (len(hash) < 16): # The shortest hash in general use is the MYSQL3 (16 chars)
+            print(f'Error Hash: {hash}')
             return False
 
         if domain == '':

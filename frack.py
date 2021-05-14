@@ -8,7 +8,6 @@
 # TODO: Add bulk parsing
 # TODO: Add single e-mail query
 # TODO: Add parse modules to parse certain breaches directly from source
-# TODO: Add data validation rules
 #########################################################################################################
 # Examples: ./frack.py parse -p -i wattpad_24133700_lines.txt -y 2021 -n None -w wattpad.com            #
 # ./frack.py parse -p -y 2019 -n Collection#1 -w 3dsiso.com -d -u -i Collection#1_3DSISO.com_2019.csv   #
@@ -260,11 +259,24 @@ def upload_blob(bucket_name, source_file_name):
 # Validate the data in the row                                                                          #
 #########################################################################################################
 def validate_data(row):
-    if validate_email(row[0], check_regex=True, check_mx=False):
-        return True
-    else:
+    # Regex for validating an E-Mail address
+    email_regex = '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
+
+    _, _, _, domain, email, password, hash, _ = r
+
+    if ( not re.search(email_regex, email)):
         return False
 
+    if password == '' and hash == '':
+        return False
+        
+    if (hash != '') and (password != '') and (len(hash) < 16): # The shortest hash in general use is the MYSQL3 (16 chars)
+        return False
+
+    if domain == '':
+        return False
+
+    return True
 
 #########################################################################################################
 # Parse a file to .orc format for upload to the ingestion bucket. If a parse module is defined, use     #
