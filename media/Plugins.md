@@ -22,7 +22,7 @@ Here we can keep track of the plugins and for which breach they are.
 | 0 | 0 | 0 | 0 | `2018-Dubsmash.com 12.3kk.txt` | 0 | 0 |
 | 0 | 0 | 0 | 0 | `2018-Chegg.com 29kk.txt` | 0 | 0 |
 | 0 | 0 | 0 | 0 | `2018-Animoto.com 13.3kk.txt` | 0 | 0 |
-| 0 | 0 | 0<br>0 | 0<br>0 | `2017-Myheritage.com 81kk.txt`<br>`2017-MyHeritage.com 23kk.txt` | 0<br>0 | 0<br>0 |
+| 2017 | [MyHeritage.com Breach][P_166] | 81,544,618<br>22,902,682 | fd925fc97dde636c2097ca23e4e59a567e4f006d<br>e3a149b563695ce0bcbf31e02266156bb04b1f97 | `2017-Myheritage.com 81kk.txt`<br>`2017-MyHeritage.com 23kk.txt` | [2017-myheritage_com.py] | [Me :)] |
 | 2016 | [Mate1.com Breach][P_165] | 27,337,079 | 9544484fa88dcc6652e5503c0e5296ac7191e39c | `2016-Mate1.com 27.5kk.txt` | [2016-mate1_com.py] | [Me :)] |
 
 
@@ -53,7 +53,7 @@ Here we can keep track of the plugins and for which breach they are.
 [P_163]: <https://haveibeenpwned.com/PwnedWebsites#iMesh>
 [P_164]: <https://haveibeenpwned.com/PwnedWebsites#000webhost>
 [P_165]: <https://haveibeenpwned.com/PwnedWebsites#Mate1>
-[P_166]: <>
+[P_166]: <https://haveibeenpwned.com/PwnedWebsites#MyHeritage>
 [P_167]: <>
 [P_168]: <>
 [P_169]: <>
@@ -80,3 +80,4 @@ Here we can keep track of the plugins and for which breach they are.
 [2013-imesh_com.py]: <../parsers/2013-imesh_com.py>
 [2015-000webhost_com.py]: <../parsers/2015-000webhost_com.py>
 [2016-mate1_com.py]: <../parsers/2016-mate1_com.py>
+[2017-myheritage_com.py]: <../parsers/2017-myheritage_com.py>
