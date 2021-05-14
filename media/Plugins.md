@@ -30,7 +30,7 @@ Here we can keep track of the plugins and for which breach they are.
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
 | 2015 | [Patreon Breach][P_150] | 2,209,954 | a60acd81dd95c51bedfc056e4caeda86b70ed0d0 | `patreon.sql` | [2015-patreon_com.py] | [@leonjza] |
-| 0 | 0 | 0 | 0 | `2012-Yahoo.com 77kk.txt` | 0 | 0 |
+| 2012 | [Yahoo Breach][P_162] | 76,420,481 | 54a19fb48d6e04564c60788b951041d0ee9c8e7d | `2012-Yahoo.com 77kk.txt` | [2012-yahoo_com.py] | [Me :)] |
 | 0 | 0 | 0 | 0 | `2013-iMesh.com 44kk [+8kk new records].txt` | 0 | 0 |
 | 0 | 0 | 0 | 0 | `2015-000webhost.com 14.8kk.txt` | 0 | 0 |
 
@@ -49,6 +49,7 @@ Here we can keep track of the plugins and for which breach they are.
 [P_159]: <https://haveibeenpwned.com/PwnedWebsites#NulledCH>
 [P_160]: <https://haveibeenpwned.com/PwnedWebsites#bigbasket>
 [P_161]: <https://www.zdnet.com/article/dating-app-mobifriends-silent-on-security-breach-impacting-3-6-million-users/>
+[P_162]: <https://en.wikipedia.org/wiki/Yahoo!_data_breaches>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -67,3 +68,4 @@ Here we can keep track of the plugins and for which breach they are.
 [2020-bigbasket_com.py]: <../parsers/2020-bigbasket_com.py>
 [2020-mobifriends_com.py]: <../parsers/2020-mobifriends_com.py>
 [2020-mobifriends_com1.py]: <../parsers/2020-mobifriends_com1.py>
+[2012-yahoo_com.py]: <../parsers/2012-yahoo_com.py>

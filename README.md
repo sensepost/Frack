@@ -32,7 +32,7 @@ Once you’ve got a clean .csv file, you can use the parsing module to add field
 
 `breach:string,site:string,year:int,domain:string,email:string,password:string,hash:string,salt:string`
 
-Because we’re adding a lot of data to the .csv the file will grow substantially which is why we then convert it to .orc format. To learn more about the .orc format you can visit:
+Because we’re adding a lot of data to the .csv the file will grow substantially which is why we then convert it to .orc format. To learn more about the .orc format you can visit: [https://orc.apache.org/](https://orc.apache.org/)
 
 As you can see below, the .orc file is super compressed, so it fits in perfectly with the why, to not spend your whole year’s salary on bandwidth.
 
