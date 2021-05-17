@@ -16,7 +16,7 @@ Here we can keep track of the plugins and for which breach they are.
 | 2020 | [Appen.com][P_158] | 1,219,865 | 97248cc3aa42dd3a6bd6b80df88a6d26b630c294 | `Appen.txt` | [2021-appen_com.py] | [Me :)] |
 | 2020 | [Wattpad Breach][P_155] | 269,631,125<br>23,987,479 | dea79791e87043a3f76e4d75f33855c7278b0197 <br>af9ddbc8138b013c80c882cb109991bd689c25d1 | `cleaned.csv`<br>`wattpad_24133700_lines.txt` | [2020-wattpad_com.py]<br>[2020-wattpad_com1.py] | [Me :)] |
 | 2020 | [Tamodo Breach][P_154] | 440,110 | c8a2ee7508fb3bce0a3aab8a2244757b0540f0c7 | `103.205.96.158.affiliate_master_dev.users.txt` | [2020-tamodo_com.py] | [Me :)] |
-| 2019 | [Cafepress Breach][P_172] | 0 | 0a62c7a8bcf71773493632feae0926d3bff7c33d | `2019-Cafepress.com 11kk.txt` | [2019-cafepress_com.py] | [Me :)] |
+| 2019 | [Cafepress Breach][P_172] | 11,093,221 | 0a62c7a8bcf71773493632feae0926d3bff7c33d | `2019-Cafepress.com 11kk.txt` | [2019-cafepress_com.py] | [Me :)] |
 | 2018 | [Shein Breach][P_171] | 28,910,205 | 64a2bd72d6339d947009082d634a2ff97514705d | `2018-Shein.com 30kk.txt` | [2018-shein_com.py] | [Me :)] |
 | 2018 | [MyFitnessPal Breach][P_170] | 48,917,501 | beabd8723bbea33982b91e85eb35cceae3e7faee | `2018-myfitnesspal_emailpass_50M.txt` | [2018-myfitnesspal_com.py] | [Me :)] |
 | 2018 | [Dubsmash Breach][P_169] | 12,217,358 | 1074b0ebe41cbc38046b2cd8bcdbfbadaff64192 | `2018-Dubsmash.com 12.3kk.txt` | [2018-dubsmash_com.py] | [Me :)] |
