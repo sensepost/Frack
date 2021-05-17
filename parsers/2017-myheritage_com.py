@@ -6,7 +6,7 @@ class Parse(base.Parser):
     """
         MyHeritage.com breach data parser
         Source File SHA-1: fd925fc97dde636c2097ca23e4e59a567e4f006d  2017-Myheritage.com_81kk.txt | e3a149b563695ce0bcbf31e02266156bb04b1f97  2017-MyHeritage.com_23kk.txt
-        Good Lines: 81,544,618 | 
+        Good Lines: 81,544,618 | 22,902,682
     """
 
     name = "None"
