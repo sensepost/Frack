@@ -4,14 +4,14 @@ from parsers import base
 
 class Parse(base.Parser):
     """
-        000Webhost.com breach data parser
-        Source File SHA-1: afa1decf087a48eef4adf8f554baf1cbcbbb580c  2015-000webhost.com_14.8kk.txt
-        Good Lines: 14,803,311
+        Animoto.com breach data parser
+        Source File SHA-1: 7447219858de776719cbe037e5636315d739062b  2018-Animoto.com_13.3kk.txt
+        Good Lines: 12,639,880
     """
 
     name = "None"
-    web = "000Webhost.com"
-    year = "2015"
+    web = "Animoto.com"
+    year = "2018"
 
     def row_format(self, r: str) -> tuple:
         """
