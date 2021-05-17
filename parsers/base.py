@@ -40,7 +40,7 @@ class Parser(ABC):
             Returns the file name used for the resultant orc file
         """
 
-        return f'frack.{self.name}.{self.web}.orc'
+        return f'{self.year}.{self.web}.{self.name}.orc'
 
     @staticmethod
     def validate_data(r: tuple) -> bool:

@@ -301,7 +301,7 @@ def parse(args):
         writecount = 0
         mytup = []
         domain = ''
-        destination = "Frack_Export" + "." + args.name + "." + args.website + ".orc"
+        destination = f'{args.year}.{args.website}.{args.name}.orc'
         with open(args.inputfile, "r") as csvfile:
             reader = csv.reader((line.replace('\0', '') for line in csvfile), delimiter=',')
             with open(destination, 'wb') as data:
