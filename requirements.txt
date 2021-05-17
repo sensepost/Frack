@@ -1,6 +1,5 @@
 tabulate
 openpyxl
-py3_validate_email==0.2.16
 hurry.filesize
 pandas
 hurry==1.1
