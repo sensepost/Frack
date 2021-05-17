@@ -26,7 +26,7 @@ Now that our file is ready for parsing, you can run it through Frack using the c
 
 And you should get an output similar to below:
 
-![Image08](media/Image_008.png)
+![Image08](Image_008.png)
 
 Now to ingest the file into the database, run below:
 
@@ -39,4 +39,4 @@ Now to ingest the file into the database, run below:
 
 The file will be ingested. Note that it may take a while if you ingest massive data sets.
 
-![Image09](media/Image_009.png)
+![Image09](Image_009.png)
