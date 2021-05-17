@@ -19,7 +19,7 @@ Here we can keep track of the plugins and for which breach they are.
 | 0 | 0 | 0 | 0 | `2019-Cafepress.com 11kk.txt` | 0 | [Me :)] |
 | 0 | 0 | 0 | 0 | `2018-Shein.com 30kk.txt` | 0 | [Me :)] |
 | 0 | 0 | 0 | 0 | `2018-myfitnesspal_emailpass_50M.txt` | 0 | [Me :)] |
-| 2018 | [Dubsmash Breach][P_169] | 0 | 1074b0ebe41cbc38046b2cd8bcdbfbadaff64192 | `2018-Dubsmash.com 12.3kk.txt` | [2018-dubsmash_com.py] | [Me :)] |
+| 2018 | [Dubsmash Breach][P_169] | 12,217,358 | 1074b0ebe41cbc38046b2cd8bcdbfbadaff64192 | `2018-Dubsmash.com 12.3kk.txt` | [2018-dubsmash_com.py] | [Me :)] |
 | 2018 | [Chegg Breach][P_168] | 29,103,412 | 45dde3f733e0b5430eac5b78d83b1fe07977d88d | `2018-Chegg.com 29kk.txt` | [2018-chegg_com.py] | [Me :)] |
 | 2018 | [Animoto Breach][P_167] | 12,639,880 | 7447219858de776719cbe037e5636315d739062b | `2018-Animoto.com 13.3kk.txt` | [2018-animoto_com.py] | [Me :)] |
 | 2017 | [MyHeritage.com Breach][P_166] | 81,544,618<br>22,902,682 | fd925fc97dde636c2097ca23e4e59a567e4f006d<br>e3a149b563695ce0bcbf31e02266156bb04b1f97 | `2017-Myheritage.com 81kk.txt`<br>`2017-MyHeritage.com 23kk.txt` | [2017-myheritage_com.py] | [Me :)] |
