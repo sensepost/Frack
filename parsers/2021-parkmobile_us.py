@@ -49,7 +49,6 @@ class Parse(base.Parser):
                     continue
 
                 if len(row.split('","')) != 18:
-                    #print("x", end='', flush=True)
                     continue
 
                 yield self.row_format(row)
