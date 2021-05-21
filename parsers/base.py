@@ -64,6 +64,9 @@ class Parser(ABC):
 
         if password == '' and hash == '':
             return False
+
+        if password == 'NULL' or hash == 'NULL':
+            return False
         
         if (hash != '') and (password != '') and (len(hash) < 16): # The shortest hash in general use is the MYSQL3 (16 chars)
             print(f'Error Hash: {hash}')
