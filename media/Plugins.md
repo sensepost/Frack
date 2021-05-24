@@ -1,7 +1,7 @@
 # Plugins Notice Board
 
 ## Plugins
-Here we can keep track of the plugins and for which breach they are.
+Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
