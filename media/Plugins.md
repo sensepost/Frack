@@ -5,6 +5,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
+| 2021 | [Vipoferta Breach][P_177] | 331,573 | a5aa4025e3bcfece9c62a83a7e7b9905edc87ebc | `vip_users_front.csv` | [2021-vipoferta_bg.py] | [Me :)] |
 | 2021 | [Descomplica Breach][P_176] | 4,242,371 | 109777393cb7a8a9158fee05b981844663e8420a | `users.sql` | [2021-descomplica_com_br.py] | [Me :)] |
 | 2021 | Not Confirmed | 4,663 | 348632cbd4bcdbfabae387d0d8e3cf955f5396c1 | `community_users_202104192144.csv` | [2021-officegenie_co_uk.py] | [Me :)] |
 | 2021 | [Parkmobile Breach][P_173] | 19,855,817 | d06823f1ecdccab5aae1ed79db3d2787a16d9f8b | `Parkmobile.us_2021-03-21.9M.csv` | [2021-parkmobile_us.py] | [Me :)] |
@@ -68,6 +69,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_174]: <https://haveibeenpwned.com/PwnedWebsites#Hurb>
 [P_175]: <None://>
 [P_176]: <https://haveibeenpwned.com/PwnedWebsites#Descomplica>
+[P_177]: <None://>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -101,3 +103,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2019-hurb_com.py]: <../parsers/2019-hurb_com.py>
 [2021-officegenie_co_uk.py]: <../parsers/2021-officegenie_co_uk.py>
 [2021-descomplica_com_br.py]: <../parsers/2021-descomplica_com_br.py>
+[2021-vipoferta_bg.py]: <../parsers/2021-vipoferta_bg.py>
