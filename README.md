@@ -1,7 +1,6 @@
 ![Head](/media/Head.png)
 
 [![Twitter](https://img.shields.io/badge/twitter-Stingray__ZA-blue)](https://twitter.com/Stingray_ZA)
-[![PyPI](https://img.shields.io/pypi/v/Frack)](https://)
 [![Plugins](https://img.shields.io/badge/Plugins----green)](media/Plugins.md)
 
 ## What is Frack?
@@ -21,9 +20,9 @@ Should you have a breach that is not supported by a plugin, you can still manual
 
 Frack supports these .csv file formats:
 
-`<email>,<password>`
-`<email>,<hash>`
-`<email>,<hash>,<salt>`
+* `<email>,<password>`
+* `<email>,<hash>`
+* `<email>,<hash>,<salt>`
 
 Unfortunately, the breach data available on the internet is never clean, and has to be extracted manually to ensure quality of the data. An example of extracting the data from a .sql dump can be seen below. I’m using an awk script to break down the .sql file into .csv files for each table and then a .sql file containing the structure of the .csv file. The awk script I use in this video is by: [https://gist.github.com/slawo-ch/894349427655d22398f825dc535a40f0](https://gist.github.com/slawo-ch/894349427655d22398f825dc535a40f0)
 
@@ -95,7 +94,7 @@ The query module allows you to query the dataset for domains. The output will be
 | -d / --singledomain `<domain>` | Specify a single domain to query. |
 
 # Quick guided run through
-1. [Configuring your local and Cloud infrastructure](/media/Step1.md)
+1. [Configuring your local and Cloud infrastructure.](/media/Step1.md)
 2. [Converting and Ingesting your first data.](/media/Step2.md)
 3. [Converting and Ingesting using a plugin.](/media/Step3.md)
 
