@@ -2,12 +2,13 @@
 
 [![Twitter](https://img.shields.io/badge/twitter-Stingray__ZA-blue)](https://twitter.com/Stingray_ZA)
 [![PyPI](https://img.shields.io/pypi/v/Frack)](https://)
+[![Plugins](https://img.shields.io/badge/Plugins----green)](media/Plugins.md)
 
 ## What is Frack?
 
 Frack is my attempt at creating an end-to-end solution to store, manage and query your breach data. The tool has got a very basic workflow making it easy to use.
 
-![WF](media/WF.png)
+![WF](media/Frack_Workflow.jpg)
 
 ## Why Frack?
 
