@@ -1,7 +1,8 @@
 ![Head](/media/Head.png)
 
 [![Twitter](https://img.shields.io/badge/twitter-Stingray__ZA-blue)](https://twitter.com/Stingray_ZA)
-[![Plugins](https://img.shields.io/badge/Plugins----green)](media/Plugins.md)
+
+[![Plugins](/media/plugins.png)](media/Plugins.md) [![Donate](/media/donate.png)](media/Donate.md)
 
 ## What is Frack?
 
@@ -92,6 +93,13 @@ The query module allows you to query the dataset for domains. The output will be
 |--|--|
 | -i / --inputfile `<filename>`  | Specify a file containing all the domains you wish to query. One domain per line. |
 | -d / --singledomain `<domain>` | Specify a single domain to query. |
+
+# Installation
+``` bash
+    git clone https://github.com/sensepost/Frack
+    cd Frack
+    pip3 install -r requirements
+```
 
 # Quick guided run through
 1. [Configuring your local and Cloud infrastructure.](/media/Step1.md)
