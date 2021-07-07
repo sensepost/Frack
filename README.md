@@ -2,7 +2,7 @@
 
 [![Twitter](https://img.shields.io/badge/twitter-Stingray__ZA-blue)](https://twitter.com/Stingray_ZA)
 
-[![Plugins](/media/plugins.png)](media/Plugins.md) [![Donate](/media/donate.png)](media/Donate.md)
+[![Plugins](/media/plugins.png)](media/Plugins.md)
 
 ## What is Frack?
 
