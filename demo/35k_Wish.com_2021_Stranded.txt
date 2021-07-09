@@ -17,6 +17,7 @@ juergen.pauly@t-online.de,120393py
 julienm14@orange.fr,Pacha14350
 lceks_171@hotmail.com,narusegawa
 marcel_altmann@web.de,juster2k
+superborkedinput,testing123
 foerster-magnus@t-online.de,magnus2001
 kn0ckout@web.de,soldier233
 kevinsch94gaming@arcor.de,geschichte
