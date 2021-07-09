@@ -260,7 +260,8 @@ def upload_blob(bucket_name, source_file_name):
 #########################################################################################################
 def validate_data(row, passbool):
     # Regex for validating an E-Mail address
-    email_regex = '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
+    #email_regex = '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
+    email_regex = '^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$'
 
     hash = domain = email = ''
 
