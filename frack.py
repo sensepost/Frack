@@ -258,22 +258,36 @@ def upload_blob(bucket_name, source_file_name):
 #########################################################################################################
 # Validate the data in the row                                                                          #
 #########################################################################################################
-def validate_data(row):
+def validate_data(row, passbool):
     # Regex for validating an E-Mail address
     email_regex = '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
 
-    _, _, _, domain, email, password, hash, _ = r
+    hash = domain = email = ''
 
-    if ( not re.search(email_regex, email)):
+    if passbool:
+        email = row[0].strip()
+        password = row[1].strip()
+        hash == ''
+    else:
+        email = row[0].strip()
+        hash = row[1].strip()
+        try:
+            salt = row[2].strip()
+        except:
+            salt == ''
+
+    try:
+        domain = row[0].split('@')[1]
+    except:
         return False
 
     if password == '' and hash == '':
         return False
-        
-    if (hash != '') and (password != '') and (len(hash) < 16): # The shortest hash in general use is the MYSQL3 (16 chars)
-        return False
 
     if domain == '':
+        return False
+
+    if ( not re.search(email_regex, email)):
         return False
 
     return True
@@ -302,12 +316,16 @@ def parse(args):
         mytup = []
         domain = ''
         destination = f'{args.year}.{args.website}.{args.name}.orc'
+        errors_file = f'{args.year}.{args.website}.errors'
+
         with open(args.inputfile, "r") as csvfile:
             reader = csv.reader((line.replace('\0', '') for line in csvfile), delimiter=',')
+            error_file = open(errors_file, 'w')
+            error_writer = csv.writer(error_file)
             with open(destination, 'wb') as data:
                 with pyorc.Writer(data, pyorc_struct) as writer:
                     for row in reader:
-                        if validate_data(row):
+                        if validate_data(row, args.passwords):
                             domain = row[0].split('@')[1]
                             if args.passwords:
                                 mytup = [args.name, args.website, int(args.year), domain, row[0], row[1], '', '']
@@ -319,14 +337,18 @@ def parse(args):
                             writecount += 1
                         else:
                             errorcount += 1
+                            error_writer.writerow(row)
                 writecount_formatted = '{:,}'.format(writecount)
                 errorcount_formatted = '{:,}'.format(errorcount)
                 sys.stdout.write("\rGood Lines: %s Bad Lines: %s" % (writecount_formatted, errorcount_formatted))
                 sys.stdout.flush()
             sys.stdout.write('\n')
+            error_file.close()
             print(txtcolors.OKBLUE + "Size of import file: " + file_size(args.inputfile) + txtcolors.ENDC)
-            print(txtcolors.OKGREEN + "File saved as: " + "Frack_Export" + "." + args.name + "." + args.website + ".orc" + txtcolors.ENDC)
-            print(txtcolors.OKBLUE + "ORC Size: " + file_size("Frack_Export" + "." + args.name + "." + args.website + ".orc") + txtcolors.ENDC)
+            print(txtcolors.OKGREEN + "File saved as: " + destination + txtcolors.ENDC)
+            print(txtcolors.OKBLUE + "ORC Size: " + file_size(destination) + txtcolors.ENDC)
+            if args.nodel:
+                os.remove(errors_file)
             if args.upload:
                 print(txtcolors.OKGREEN + "Uploading .orc to bucket ..." + txtcolors.ENDC)
                 upload_blob(bucket_name, "Frack_Export" + "." + args.name + "." + args.website + ".orc")

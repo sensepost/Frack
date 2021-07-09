@@ -3,6 +3,5 @@ __pycache__/
 *.orc
 /data
 *.json
-count_orc.py
 Todo.txt
 *.xlsx
