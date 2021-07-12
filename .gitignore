@@ -5,3 +5,4 @@ __pycache__/
 *.json
 Todo.txt
 *.xlsx
+*.errors

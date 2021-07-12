@@ -263,7 +263,7 @@ def validate_data(row, passbool):
     #email_regex = '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
     email_regex = '^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$'
 
-    hash = domain = email = ''
+    hash = domain = email = salt = password = ''
 
     if passbool:
         email = row[0].strip()
