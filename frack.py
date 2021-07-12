@@ -87,7 +87,7 @@ def main():
                               help="Use if file contains passwords instead of hashes ex. e-mail:password.")
     parser_parse.add_argument('-s', '--salt', action='store_true',
                               help="Use if file contains hashes with salts ex. e-mail:hash:salt.")
-    parser_parse.add_argument('-d', '--nodel', action='store_false', help="Don't delete the error file.")
+    parser_parse.add_argument('-d', '--nodel', action='store_false', help="Don't delete the error file. Only available on CSV import not when using plugins!")
     parser_parse.add_argument('-u', '--upload', action='store_true',
                               help="Upload the file to the ingestion bucket after parsing.")
 
