@@ -5,18 +5,15 @@ First export your admin key path using below command:
 
 `export GOOGLE_APPLICATION_CREDENTIALS=/home/stingray/<your admin key>.json`
 
-I’ve included a small sample in the demo directory. The file is in `<email>:<password>` format, so we just quickly need to replace the colons with commas to make it a valid .csv file.
-
-`sed "s/:/,/g" -i 35k_Wish.com_2021_Stranded.txt`
+I’ve included a small sample in the demo directory. The file is in `<email>,<hash>` format.
 
 Now that our file is ready for parsing, you can run it through Frack using the command below:
 
-`./frack.py parse -p -y 2021 -n None -w Wish.com -d -u -i 35k_Wish.com_2021_Stranded.txt`
+`./frack.py parse -y 2021 -n None -w iamuptonogood.com -u -i demo/fake.csv -d`
 
 | Argument | Meaning |
 |---|---|
 |parse|	The first parameter is the module to use. We will be using the parse module. |
-|-p| Our file contains passwords |
 |-y|The year the breach happened |
 |-n|The Name of the breach. Since this is just a single website and not part of a combo or a collection of breaches, I prefer to use None.|
 |-w|The website that the data relates to|
