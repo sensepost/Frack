@@ -49,7 +49,6 @@ class txtcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-
 def main():
     splash()
     parser = argparse.ArgumentParser(prog='frack.py', usage='%(prog)s ',
@@ -247,12 +246,12 @@ def file_size(file_path):
 # Uploads the new .orc file to the ingestion bucket                                                     #
 #########################################################################################################
 def upload_blob(bucket_name, source_file_name):
-    print("Uploading File to storage bucket...")
+    print(txtcolors.OKGREEN + "Uploading File to storage bucket..." + txtcolors.ENDC)
     storage_client = storage.Client()
     bucket = storage_client.get_bucket(bucket_name)
     blob = bucket.blob(source_file_name)
     blob.upload_from_filename(source_file_name)
-    print("File uploaded to " + bucket_name)
+    print(txtcolors.OKGREEN + f"File uploaded to the {bucket_name} storage bucket." + txtcolors.ENDC)
 
 
 #########################################################################################################
@@ -302,10 +301,10 @@ def parse(args):
         try:
             mod_src = importlib.import_module(f'parsers.{args.module}')
         except ImportError as e:
-            print(f'unable to import parser with error: {e}')
+            print(txtcolors.FAIL + f'unable to import parser with error: {e}' + txtcolors.ENDC)
             return
 
-        parser = mod_src.Parse(args.inputfile)
+        parser = mod_src.Parse(args.inputfile, args.upload)
         parser.process()
 
     elif (args.year is None) or (args.name is None) or (args.website is None):
@@ -346,13 +345,13 @@ def parse(args):
             sys.stdout.write('\n')
             error_file.close()
             print(txtcolors.OKBLUE + "Size of import file: " + file_size(args.inputfile) + txtcolors.ENDC)
-            print(txtcolors.OKGREEN + "File saved as: " + destination + txtcolors.ENDC)
+            print(txtcolors.OKGREEN + f'File written to: {destination}'+ txtcolors.ENDC)
             print(txtcolors.OKBLUE + "ORC Size: " + file_size(destination) + txtcolors.ENDC)
             if args.nodel:
                 os.remove(errors_file)
             if args.upload:
                 print(txtcolors.OKGREEN + "Uploading .orc to bucket ..." + txtcolors.ENDC)
-                upload_blob(bucket_name, "Frack_Export" + "." + args.name + "." + args.website + ".orc")
+                upload_blob(bucket_name, destination)
 
 #########################################################################################################
 # Perform the DB maintenance commands specified in args.                                                #
