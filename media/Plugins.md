@@ -5,6 +5,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
+| 2021 | [Promofarma Breach][P_180] | 2,549,177 | 2f9a7bcdbc37fa6d94700ee22035d93c0cc24657 | `promofarma.com(2021).csv` | [2021-promofarma_com.py] | [Me :)] |
 | 2021 | [Wedmegood Breach][P_178] | 446,672 | 7f218df16c31449354ffae70d2cf63e174bbfd45 | `wedmegood_symfony-PROD.backup_Jan_06_21_06-30.sql` | None | [Me :)] |
 | 2021 | [Vipoferta Breach][P_177] | 331,573 | a5aa4025e3bcfece9c62a83a7e7b9905edc87ebc | `vip_users_front.csv` | [2021-vipoferta_bg.py] | [Me :)] |
 | 2021 | [Descomplica Breach][P_176] | 4,242,371 | 109777393cb7a8a9158fee05b981844663e8420a | `users.sql` | [2021-descomplica_com_br.py] | [Me :)] |
@@ -74,6 +75,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_177]: <None://>
 [P_178]: <https://haveibeenpwned.com/PwnedWebsites#WedMeGood>
 [P_179]: <https://haveibeenpwned.com/PwnedWebsites#Pixlr>
+[P_180]: <https://haveibeenpwned.com/PwnedWebsites#Promofarma>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -109,3 +111,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2021-descomplica_com_br.py]: <../parsers/2021-descomplica_com_br.py>
 [2021-vipoferta_bg.py]: <../parsers/2021-vipoferta_bg.py>
 [2020-pixlr_com.py]: <../parsers/2020-pixlr_com.py>
+[2021-promofarma_com.py]: <../parsers/2021-promofarma_com.py>
