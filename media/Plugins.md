@@ -16,6 +16,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 | 2021 | [123rf.com][P_151] | 8,292,274 | 28f439448b7a8237e62847d4df48b95d42c1fec4 | `123rf.com_member.sql` | [2021-123rf_com.py] | [Me :)] |
 | 2021 | [Nitro_PDF][P_152] | 77,082,678 | 50dbf53333ef77ef59cd170be4c33931e613b8d9 | `nitrocloud.tsv` | [2021-nitropdf_com.py] | [Me :)] |
 | 2021 | Not Confirmed | 35,376 | cf475b17a7ed3fee45d17ccb57763c7a5c99ad9d | `35k_Wish.com_2021_Stranded.txt` | [2021-wish_com.py] | [@leonjza] |
+| 2020 | [Jefit Breach][P_181] | 2,891,960 | 93893c06dc3b29871b058978438d78566e9fad43 | `Jefit(2020).csv` | [2020-jefit_com.py] | [Me :)] |
 | 2020 | [Pixlr Breach][P_179] | 452,909 | 893a5be2a01ef7256f679e2ce2a6a4555295bd9d | `pixlr.json` | [2020-pixlr_com.py] | [Me :)] |
 | 2020 | [MobiFriends.com][P_161] | 3,640,926<br>127,217 | 3944a67b7375bc15437db8d0c3812eedf7070673<br>74e5468872c80fbc02f7f87bdddd8e582761fc9e | `mobifriends-users.sql`<br>`MobiFriends.com_DataBase.txt` | [2020-mobifriends_com.py]<br>[2020-mobifriends_com1.py] | [Me :)] |
 | 2020 | [BigBasket.com][P_160] | 20,489,857 | a4dd21b5ca4e98c82417262f82957005de2db637 | `bb.sql` | [2020-bigbasket_com.py] | [Me :)] |
@@ -76,6 +77,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_178]: <https://haveibeenpwned.com/PwnedWebsites#WedMeGood>
 [P_179]: <https://haveibeenpwned.com/PwnedWebsites#Pixlr>
 [P_180]: <https://haveibeenpwned.com/PwnedWebsites#Promofarma>
+[P_181]: <https://haveibeenpwned.com/PwnedWebsites#Jefit>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -112,3 +114,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2021-vipoferta_bg.py]: <../parsers/2021-vipoferta_bg.py>
 [2020-pixlr_com.py]: <../parsers/2020-pixlr_com.py>
 [2021-promofarma_com.py]: <../parsers/2021-promofarma_com.py>
+[2020-jefit_com.py]: <../parsers/2020-jefit_com.py>
