@@ -1,6 +1,7 @@
 ![Head](/media/Head.png)
 
 [![Twitter](https://img.shields.io/badge/twitter-Stingray__ZA-blue)](https://twitter.com/Stingray_ZA)
+[![Defcon](https://img.shields.io/badge/Defcon-29-blue)](https://forum.defcon.org/node/237235)
 
 [![Plugins](/media/plugins.png)](media/Plugins.md)
 
@@ -9,6 +10,8 @@
 Frack is my attempt at creating an end-to-end solution to store, manage and query your breach data. The tool has got a very basic workflow making it easy to use.
 
 ![WF](media/Frack_Workflow.jpg)
+
+[![Youtube video of DefCon 29](https://img.youtube.com/vi/XYR0BCu422w/0.jpg)](https://www.youtube.com/watch?v=XYR0BCu422w "Youtube video of DefCon 29")
 
 ## Why Frack?
 
