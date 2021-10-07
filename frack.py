@@ -570,18 +570,7 @@ def create_excel(csv_name, singledomain, passwords):
             clean_pass.append(val)
 
     # Add a count to the passwords in a tuple so we can use it later.
-    if len(clean_pass) != 0:
-        word = clean_pass[0]
-        count = 0
-        for i in clean_pass:
-            if word == i and word != "":
-                count = count + 1
-            else:
-                topTen.append((count, word))
-                word = i
-                count = 1
-        topTen.sort()
-        topTen.reverse()
+    topTen = [item for item in Counter(clean_pass).most_common()]
 
     # Use the first 10 items in our tuple to write in the sheet.
     for i in range(min(10, len(topTen))):
