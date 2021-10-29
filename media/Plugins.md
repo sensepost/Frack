@@ -5,6 +5,8 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
+| 2021 | [Smdepot.net Breach][P_185] | 322 | 8a35c58495ff2e4920fda189d1024d7d711aa2b3 | `Smdepot.net 2021.sql` | [2021-smdepot_net.py] | [Me :)] |
+| 2021 | [Thane.city Breach][P_184] | 18,440 | 3607a577329e3a52a540ee2cc76db3faea589981 | `thane.city - 2021-07-04.txt` | [2021-thane_city.py] | [Me :)] |
 | 2021 | [Dailyquiz.me Breach][P_182] | 10,875,573 | a08a93b5828ed61c09863e43e28d0f08a68ed221 | `dailyquiz.me2021.csv` | [2021-dailyquiz_me.py] | [Me :)] |
 | 2021 | [Promofarma Breach][P_180] | 2,549,177 | 2f9a7bcdbc37fa6d94700ee22035d93c0cc24657 | `promofarma.com(2021).csv` | [2021-promofarma_com.py] | [Me :)] |
 | 2021 | [Wedmegood Breach][P_178] | 446,672 | 7f218df16c31449354ffae70d2cf63e174bbfd45 | `wedmegood_symfony-PROD.backup_Jan_06_21_06-30.sql` | None | [Me :)] |
@@ -18,6 +20,8 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 | 2021 | [Nitro_PDF][P_152] | 77,082,678 | 50dbf53333ef77ef59cd170be4c33931e613b8d9 | `nitrocloud.tsv` | [2021-nitropdf_com.py] | [Me :)] |
 | 2021 | Not Confirmed | 35,376 | cf475b17a7ed3fee45d17ccb57763c7a5c99ad9d | `35k_Wish.com_2021_Stranded.txt` | [2021-wish_com.py] | [@leonjza] |
 | 2021 | [Thingyverse.com][P_183] | 2,079,128 | d6206521db1aebb8ccc628ee9c6f49142daf5ce4 | `thingiverse.com.sql` | [2020-thingiverse.com.py] | [Me :)] |
+| 2020 | [Teespring.com Breach][P_187] | 4,504,993 | 73b11542564476ba784756e42f8b0cc97cb7a282 | `teespring.csv` | [2020-teespring_com.py] | [Me :)] |
+| 2020 | [Betfame.com Breach][P_186] | 13,662 | a46f38b084ace950b79ba3498f393071d1ce216b | `user.csv` | [2020-betfame_com.py] | [Me :)] |
 | 2020 | [Jefit Breach][P_181] | 2,891,960 | 93893c06dc3b29871b058978438d78566e9fad43 | `Jefit(2020).csv` | [2020-jefit_com.py] | [Me :)] |
 | 2020 | [Pixlr Breach][P_179] | 452,909 | 893a5be2a01ef7256f679e2ce2a6a4555295bd9d | `pixlr.json` | [2020-pixlr_com.py] | [Me :)] |
 | 2020 | [MobiFriends.com][P_161] | 3,640,926<br>127,217 | 3944a67b7375bc15437db8d0c3812eedf7070673<br>74e5468872c80fbc02f7f87bdddd8e582761fc9e | `mobifriends-users.sql`<br>`MobiFriends.com_DataBase.txt` | [2020-mobifriends_com.py]<br>[2020-mobifriends_com1.py] | [Me :)] |
@@ -26,6 +30,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 | 2020 | [Appen.com][P_158] | 1,219,865 | 97248cc3aa42dd3a6bd6b80df88a6d26b630c294 | `Appen.txt` | [2021-appen_com.py] | [Me :)] |
 | 2020 | [Wattpad Breach][P_155] | 269,631,125<br>23,987,479 | dea79791e87043a3f76e4d75f33855c7278b0197 <br>af9ddbc8138b013c80c882cb109991bd689c25d1 | `cleaned.csv`<br>`wattpad_24133700_lines.txt` | [2020-wattpad_com.py]<br>[2020-wattpad_com1.py] | [Me :)] |
 | 2020 | [Tamodo Breach][P_154] | 440,110 | c8a2ee7508fb3bce0a3aab8a2244757b0540f0c7 | `103.205.96.158.affiliate_master_dev.users.txt` | [2020-tamodo_com.py] | [Me :)] |
+| 2019 | [Canva Breach][P_188] | 947,936 | 4726585905d51407b211c1e202cebe9741fcb492 | `Canva.txt` | [2019-canva_com.py] | [Me :)] |
 | 2019 | [Hurb Breach][P_174] | 6,113,438 | f787e785cfd7e64f2d170c0a4c66533e75c85df6 | `hotelurbano.sql` | [2019-hurb_com.py] | [Me :)] |
 | 2019 | [Cafepress Breach][P_172] | 11,093,221 | 0a62c7a8bcf71773493632feae0926d3bff7c33d | `2019-Cafepress.com 11kk.txt` | [2019-cafepress_com.py] | [Me :)] |
 | 2018 | [Shein Breach][P_171] | 28,910,205 | 64a2bd72d6339d947009082d634a2ff97514705d | `2018-Shein.com 30kk.txt` | [2018-shein_com.py] | [Me :)] |
@@ -82,6 +87,11 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_181]: <https://haveibeenpwned.com/PwnedWebsites#Jefit>
 [P_182]: <https://haveibeenpwned.com/PwnedWebsites#DailyQuiz>
 [P_183]: <None://>
+[P_184]: <https://rfmirror.com/Thread-Reupload-Free-Release-Thane-city-2021-07-04>
+[P_185]: <https://rfmirror.com/Thread-SQL-Free-Release-Smdepot-net-2021-07>
+[P_186]: <https://rfmirror.com/Thread-Betfame-com-Database-Leak-15k-Userbase>
+[P_187]: <https://haveibeenpwned.com/PwnedWebsites#Teespring>
+[P_188]: <https://haveibeenpwned.com/PwnedWebsites#Canva>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -121,3 +131,8 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2020-jefit_com.py]: <../parsers/2020-jefit_com.py>
 [2021-dailyquiz_me.py]: <../parsers/2021-dailyquiz_me.py>
 [2020-thingiverse.com.py]: <../parsers/2020-thingiverse.com.py>
+[2021-thane_city.py]: <../parsers/2021-thane_city.py>
+[2021-smdepot_net.py]: <../parsers/2021-smdepot_net.py>
+[2020-betfame_com.py]: <../parsers/2020-betfame_com.py>
+[2020-teespring_com.py]: <../parsers/2020-teespring_com.py>
+[2019-canva_com.py]: <../parsers/2019-canva_com.py>
