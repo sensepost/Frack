@@ -1,11 +1,16 @@
-#!/bin/python3.9
+#!/bin/python
 # -*- coding: utf-8 -*-
 #########################################################################################################
 # Count the number of lines in the .orc file                                                            #
 # Since PyOrc Reader doesn't have a count or lines attribute, we'll do it manually                      #
 #########################################################################################################
-import pyorc
 import sys
+
+if sys.version_info < (3, 9):
+    print('Please upgrade your Python version to 3.9.0 or higher')
+    sys.exit()
+
+import pyorc
 
 i = 0
 
