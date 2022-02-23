@@ -1,4 +1,4 @@
-#!/bin/python3.9
+#!/bin/python
 # -*- coding: utf-8 -*-
 #########################################################################################################
 # Remember to export the location of the service account key!                                           #
@@ -11,6 +11,12 @@
 # Examples: ./frack.py parse -p -i wattpad_24133700_lines.txt -y 2021 -n None -w wattpad.com            #
 # ./frack.py parse -p -y 2019 -n Collection#1 -w 3dsiso.com -d -u -i Collection#1_3DSISO.com_2019.csv   #
 #########################################################################################################
+
+import sys
+
+if sys.version_info < (3, 9):
+    print('Please upgrade your Python version to 3.9.0 or higher')
+    sys.exit()
 
 import argparse, csv, importlib
 import os, sys, time, io, pyorc, re
