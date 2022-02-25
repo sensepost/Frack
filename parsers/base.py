@@ -116,7 +116,7 @@ class Parser(ABC):
             upload_blob(bucket_name, self.get_orc_name())
 
     @abstractmethod
-    def process_rows(self) -> collections.Iterable[tuple]:
+    def process_rows(self) -> collections.abc.Iterable[tuple]:
         """
             Yields processed & formatted rows from the dump returning a tuple
             with fields:

@@ -54,7 +54,7 @@ class Parse(base.Parser):
 
         return self.name, self.web, int(self.year), domain, email, '', pw_hash, ''
 
-    def process_rows(self) -> collections.Iterable[tuple]:
+    def process_rows(self) -> collections.abc.Iterable[tuple]:
         print('\nPlease wait. It takes a while to get to the data.', flush=True)
         with open(self.source, 'r', encoding='utf-8', errors='ignore') as source:
             for row in source:
