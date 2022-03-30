@@ -5,6 +5,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
+| 2021 | [Farmadelivery.com.br Breach][P_189] | 902,306 | bbd8359980edbfe9adc31cf16c67f11bd87d7f95 | `FARMADELIVERY.COM.BR.txt' | [2021-farmadelivery_com.py] | [Me :)] |
 | 2021 | [Smdepot.net Breach][P_185] | 322 | 8a35c58495ff2e4920fda189d1024d7d711aa2b3 | `Smdepot.net 2021.sql` | [2021-smdepot_net.py] | [Me :)] |
 | 2021 | [Thane.city Breach][P_184] | 18,440 | 3607a577329e3a52a540ee2cc76db3faea589981 | `thane.city - 2021-07-04.txt` | [2021-thane_city.py] | [Me :)] |
 | 2021 | [Dailyquiz.me Breach][P_182] | 10,875,573 | a08a93b5828ed61c09863e43e28d0f08a68ed221 | `dailyquiz.me2021.csv` | [2021-dailyquiz_me.py] | [Me :)] |
@@ -92,6 +93,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_186]: <https://rfmirror.com/Thread-Betfame-com-Database-Leak-15k-Userbase>
 [P_187]: <https://haveibeenpwned.com/PwnedWebsites#Teespring>
 [P_188]: <https://haveibeenpwned.com/PwnedWebsites#Canva>
+[P_189]: <None://>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -136,3 +138,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2020-betfame_com.py]: <../parsers/2020-betfame_com.py>
 [2020-teespring_com.py]: <../parsers/2020-teespring_com.py>
 [2019-canva_com.py]: <../parsers/2019-canva_com.py>
+[2021-farmadelivery_com.py]: <../parsers/2021-farmadelivery_com.py>
