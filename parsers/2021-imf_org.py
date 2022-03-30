@@ -6,8 +6,8 @@ from parsers import base
 class Parse(base.Parser):
     """
         imf.org breach data parser
-        Source File SHA-1: 
-        Good Lines: 62b4d62c4070f7e3c9b31fb68958760d7cc41883  imf.org.csv
+        Source File SHA-1: 62b4d62c4070f7e3c9b31fb68958760d7cc41883  imf.org.csv
+        Good Lines: 844
     """
 
     name = "None"
