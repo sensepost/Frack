@@ -35,8 +35,8 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = currentlocation + "/creds.json"
 
 # Change these to match your environment.
 project_name = "testingbigquery-306308"
-bucket_name = "ingesting_bucket"
-bucket_uri = "gs://ingesting_bucket/*.orc"
+bucket_name = "ingestionbucket_frack"
+bucket_uri = "gs://ingestionbucket_frack/*.orc"
 
 # You can leave this one. The tool will create these for you on the first ingestion.
 # table_id = 'Breach_Data.Part_Data'
