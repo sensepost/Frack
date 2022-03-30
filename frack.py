@@ -28,6 +28,8 @@ from hurry.filesize import size, verbose
 from openpyxl import Workbook
 from tabulate import tabulate
 
+currentlocation = os.path.dirname(os.path.abspath(__file__))
+
 # Change this to reflect your creds file or just rename your creds file.
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = currentlocation + "/creds.json"
 
