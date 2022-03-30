@@ -6,8 +6,8 @@ from parsers import base
 class Parse(base.Parser):
     """
         farmadelivery.com.br breach data parser
-        Source File SHA-1: 
-        Good Lines: 
+        Source File SHA-1: bbd8359980edbfe9adc31cf16c67f11bd87d7f95  FARMADELIVERY.COM.BR.txt
+        Good Lines: 902,306
     """
 
     name = "None"
