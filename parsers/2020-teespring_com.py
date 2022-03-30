@@ -34,7 +34,7 @@ class Parse(base.Parser):
 
         return self.name, self.web, int(self.year), domain, email, '', hash, ''
 
-    def process_rows(self) -> collections.Iterable[tuple]:
+    def process_rows(self) -> collections.abc.Iterable[tuple]:
         """
             Returns rows for the caller to process
         """
