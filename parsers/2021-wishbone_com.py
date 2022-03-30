@@ -66,7 +66,7 @@ class Parse(base.Parser):
 
         return self.name, self.web, int(self.year), domain, email, '', pw_hash, ''
 
-    def process_rows(self) -> collections.Iterable[tuple]:
+    def process_rows(self) -> collections.abc.Iterable[tuple]:
         with open(self.source, 'r', encoding='utf-8', errors='ignore') as source:
             for row in source:
                 if row is None:
