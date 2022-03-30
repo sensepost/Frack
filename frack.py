@@ -6,7 +6,6 @@
 #########################################################################################################
 # TODO: DELETE FROM `testingbigquery-306308.Breach_Data.Breach_Data` WHERE site IS NULL AND breach IS NULL
 # TODO: Add bulk parsing
-# TODO: Add single e-mail query
 #########################################################################################################
 # Examples: ./frack.py parse -p -i wattpad_24133700_lines.txt -y 2021 -n None -w wattpad.com            #
 # ./frack.py parse -p -y 2019 -n Collection#1 -w 3dsiso.com -d -u -i Collection#1_3DSISO.com_2019.csv   #
@@ -28,6 +27,9 @@ from google.cloud.exceptions import NotFound
 from hurry.filesize import size, verbose
 from openpyxl import Workbook
 from tabulate import tabulate
+
+# Change this to reflect your creds file or just rename your creds file.
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = currentlocation + "/creds.json"
 
 # Change these to match your environment.
 project_name = "testingbigquery-306308"
