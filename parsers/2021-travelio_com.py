@@ -52,7 +52,7 @@ class Parse(base.Parser):
             email = domain = password = pw_hash = ''
         
         #print(f'{email}:{password}')
-        print(f'{email}:{pw_hash}')
+        #print(f'{email}:{pw_hash}')
 
         return self.name, self.web, int(self.year), domain, email, password, pw_hash, salt
 
