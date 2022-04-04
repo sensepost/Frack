@@ -5,6 +5,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
+| 2021 | [Travelio.com Breach][P_196] | 0 | 39b91b82ecc7ad02fe6d04db9eb76c6b3d7f7c0e | `TRAVELIO.csv` | [2021-travelio_com.py] | [Me :)] |
 | 2021 | [TunedGlobal.com Breac][P_193] | 464,251 | c0e89bcfa835910c2b0a3ae748995473375d438f | `music_users.sql` | [2021-tunedglobal_com.py] | [Me :)] |
 | 2021 | [Imf.org Breach][P_192] | 844 | 62b4d62c4070f7e3c9b31fb68958760d7cc41883 | `imf.org.csv` | [2021-imf_org.py] | [Me :)] |
 | 2021 | [Tambolabingo.com Breach][P_191] | 18,064 | 272ad3f72692a7b06013a5827a675b35efae9481 | `tambola_email.txt` | [2021-tambolabingo.com.py] | [Me :)] |
@@ -25,6 +26,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 | 2021 | [Nitro_PDF][P_152] | 77,082,678 | 50dbf53333ef77ef59cd170be4c33931e613b8d9 | `nitrocloud.tsv` | [2021-nitropdf_com.py] | [Me :)] |
 | 2021 | Not Confirmed | 35,376 | cf475b17a7ed3fee45d17ccb57763c7a5c99ad9d | `35k_Wish.com_2021_Stranded.txt` | [2021-wish_com.py] | [@leonjza] |
 | 2021 | [Thingyverse.com][P_183] | 2,079,128 | d6206521db1aebb8ccc628ee9c6f49142daf5ce4 | `thingiverse.com.sql` | [2020-thingiverse.com.py] | [Me :)] |
+| 2020 | [RedMart.Lazada.sg Breach][P_195] | 919,526 | 07afd4d1f5aac2d142397f779ac26ee9bb2d9c12 | `Redmart.lazada.sg.txt` | [2020-redmart_lazada_sg.py] | [Me :)] |
 | 2020 | [Teespring.com Breach][P_187] | 4,504,993 | 73b11542564476ba784756e42f8b0cc97cb7a282 | `teespring.csv` | [2020-teespring_com.py] | [Me :)] |
 | 2020 | [Betfame.com Breach][P_186] | 13,662 | a46f38b084ace950b79ba3498f393071d1ce216b | `user.csv` | [2020-betfame_com.py] | [Me :)] |
 | 2020 | [Jefit Breach][P_181] | 2,891,960 | 93893c06dc3b29871b058978438d78566e9fad43 | `Jefit(2020).csv` | [2020-jefit_com.py] | [Me :)] |
@@ -104,6 +106,8 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_192]: <None://>
 [P_193]: <None://>
 [P_194]: <https://haveibeenpwned.com/PwnedWebsites#StreetEasy>
+[P_195]: <https://haveibeenpwned.com/PwnedWebsites#Lazada>
+[P_196]: <https://www.riskbasedsecurity.com/2021/12/14/dark-web-roundup-november-2021/>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -152,3 +156,5 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2021-readnovel_com.py]: <../parsers/2021-readnovel_com.py>
 [2021-tunedglobal_com.py]: <../parsers/2021-tunedglobal_com.py>
 [2019-streeteasy_com.py]: <../parsers/2019-streeteasy_com.py>
+[2020-redmart_lazada_sg.py]: <../parsers/2020-redmart_lazada_sg.py>
+[2021-travelio_com.py]: <../parsers/2021-travelio_com.py>
