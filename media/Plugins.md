@@ -35,6 +35,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 | 2020 | [Appen.com][P_158] | 1,219,865 | 97248cc3aa42dd3a6bd6b80df88a6d26b630c294 | `Appen.txt` | [2021-appen_com.py] | [Me :)] |
 | 2020 | [Wattpad Breach][P_155] | 269,631,125<br>23,987,479 | dea79791e87043a3f76e4d75f33855c7278b0197 <br>af9ddbc8138b013c80c882cb109991bd689c25d1 | `cleaned.csv`<br>`wattpad_24133700_lines.txt` | [2020-wattpad_com.py]<br>[2020-wattpad_com1.py] | [Me :)] |
 | 2020 | [Tamodo Breach][P_154] | 440,110 | c8a2ee7508fb3bce0a3aab8a2244757b0540f0c7 | `103.205.96.158.affiliate_master_dev.users.txt` | [2020-tamodo_com.py] | [Me :)] |
+| 2019 | [Streeteasy.com Breach][P_194] | 988,174 | 963b0e61938b50bea1a3abb1a6c3cabf2fff40b2 | `streeteasy.sql` | [2019-streeteasy_com.py] | [Me :)] |
 | 2019 | [Canva Breach][P_188] | 947,936 | 4726585905d51407b211c1e202cebe9741fcb492 | `Canva.txt` | [2019-canva_com.py] | [Me :)] |
 | 2019 | [Hurb Breach][P_174] | 6,113,438 | f787e785cfd7e64f2d170c0a4c66533e75c85df6 | `hotelurbano.sql` | [2019-hurb_com.py] | [Me :)] |
 | 2019 | [Cafepress Breach][P_172] | 11,093,221 | 0a62c7a8bcf71773493632feae0926d3bff7c33d | `2019-Cafepress.com 11kk.txt` | [2019-cafepress_com.py] | [Me :)] |
@@ -101,6 +102,8 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_190]: <https://hacknotice.com/2021/06/01/readnovel-com/>
 [P_191]: <None://>
 [P_192]: <None://>
+[P_193]: <None://>
+[P_194]: <https://haveibeenpwned.com/PwnedWebsites#StreetEasy>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -148,3 +151,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2021-farmadelivery_com.py]: <../parsers/2021-farmadelivery_com.py>
 [2021-readnovel_com.py]: <../parsers/2021-readnovel_com.py>
 [2021-tunedglobal_com.py]: <../parsers/2021-tunedglobal_com.py>
+[2019-streeteasy_com.py]: <../parsers/2019-streeteasy_com.py>
