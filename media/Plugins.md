@@ -5,6 +5,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
+| 2021 | [TunedGlobal.com Breac][P_193] | 464,251 | c0e89bcfa835910c2b0a3ae748995473375d438f | `music_users.sql` | [2021-tunedglobal_com.py] | [Me :)] |
 | 2021 | [Imf.org Breach][P_192] | 844 | 62b4d62c4070f7e3c9b31fb68958760d7cc41883 | `imf.org.csv` | [2021-imf_org.py] | [Me :)] |
 | 2021 | [Tambolabingo.com Breach][P_191] | 18,064 | 272ad3f72692a7b06013a5827a675b35efae9481 | `tambola_email.txt` | [2021-tambolabingo.com.py] | [Me :)] |
 | 2021 | [Readnovel.com Breach][P_190] | 10,908,803 | ec6c014b17096592994cbb82c502d5b8b9694f0f | `Readnovel.com_Dehash.txt` | [2021-readnovel_com.py] | [Me :)] |
@@ -99,6 +100,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_189]: <None://>
 [P_190]: <https://hacknotice.com/2021/06/01/readnovel-com/>
 [P_191]: <None://>
+[P_192]: <None://>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -145,3 +147,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2019-canva_com.py]: <../parsers/2019-canva_com.py>
 [2021-farmadelivery_com.py]: <../parsers/2021-farmadelivery_com.py>
 [2021-readnovel_com.py]: <../parsers/2021-readnovel_com.py>
+[2021-tunedglobal_com.py]: <../parsers/2021-tunedglobal_com.py>
