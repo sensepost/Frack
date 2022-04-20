@@ -28,6 +28,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 | 2021 | [Nitro_PDF][P_152] | 77,082,678 | 50dbf53333ef77ef59cd170be4c33931e613b8d9 | `nitrocloud.tsv` | [2021-nitropdf_com.py] | [Me :)] |
 | 2021 | Not Confirmed | 35,376 | cf475b17a7ed3fee45d17ccb57763c7a5c99ad9d | `35k_Wish.com_2021_Stranded.txt` | [2021-wish_com.py] | [@leonjza] |
 | 2021 | [Thingyverse.com][P_183] | 2,079,128 | d6206521db1aebb8ccc628ee9c6f49142daf5ce4 | `thingiverse.com.sql` | [2020-thingiverse.com.py] | [Me :)] |
+| 2020 | [Yotepresto.com Breach][P_200] | 1,437,441 | 65e987e701d19ce2b85a8ea2203a0fbe7e18eb71 | `yotepresto_users.csv` | [2020-yotepresto_com.py] | [Me :)] |
 | 2020 | [Royalenfield.com Breach][P_197] | 279,962 | a7ba8c856ff1966ca0fee9a835ff660c98806024 | `49.205.181.100.re-node-db.users(royalenfield.com).json` | [2020-royalenfield_com.py] | [Me :)] |
 | 2020 | [RedMart.Lazada.sg Breach][P_195] | 919,526 | 07afd4d1f5aac2d142397f779ac26ee9bb2d9c12 | `Redmart.lazada.sg.txt` | [2020-redmart_lazada_sg.py] | [Me :)] |
 | 2020 | [Teespring.com Breach][P_187] | 4,504,993 | 73b11542564476ba784756e42f8b0cc97cb7a282 | `teespring.csv` | [2020-teespring_com.py] | [Me :)] |
@@ -114,6 +115,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_197]: <https://haveibeenpwned.com/PwnedWebsites#RoyalEnfield>
 [P_198]: <https://haveibeenpwned.com/PwnedWebsites#BlankMediaGames>
 [P_199]: <https://www.riskbasedsecurity.com/2021/01/25/shinyhunters-wave-3-one-hacker-exposes-over-125-million-credentials/>
+[P_200]: <https://haveibeenpwned.com/PwnedWebsites#YoteprestoCom>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -167,3 +169,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2020-royalenfield_com.py]: <../parsers/2020-royalenfield_com.py>
 [2021-blankmediagames_com.py]: <../parsers/2021-blankmediagames_com.py>
 [2021-rooter_io.py]: <../parsers/2021-rooter_io.py>
+[2020-yotepresto_com.py]: <../parsers/2020-yotepresto_com.py>
