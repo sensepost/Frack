@@ -5,7 +5,8 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
-| 2021 | [BlankMediaGames Breach][P_198] | 0 | 4f65d5836db9d7aaad23f9252f70041f0f473a82 | `BlankMediaGames.sql` | [2021-blankmediagames_com.py] | [Me :)] |
+| 2021 | [Rooter.io Breach][P_199] | 518,079 | 337826c1dab3547cd1c528318ca7798ca5ab8aea | `rooter.sql` | [2021-rooter_io.py] | [Me :)] |
+| 2021 | [BlankMediaGames Breach][P_198] | 7,777,534 | 4f65d5836db9d7aaad23f9252f70041f0f473a82 | `BlankMediaGames.sql` | [2021-blankmediagames_com.py] | [Me :)] |
 | 2021 | [Travelio.com Breach][P_196] | 327,963 | 39b91b82ecc7ad02fe6d04db9eb76c6b3d7f7c0e | `TRAVELIO.csv` | [2021-travelio_com.py] | [Me :)] |
 | 2021 | [TunedGlobal.com Breac][P_193] | 464,251 | c0e89bcfa835910c2b0a3ae748995473375d438f | `music_users.sql` | [2021-tunedglobal_com.py] | [Me :)] |
 | 2021 | [Imf.org Breach][P_192] | 844 | 62b4d62c4070f7e3c9b31fb68958760d7cc41883 | `imf.org.csv` | [2021-imf_org.py] | [Me :)] |
@@ -112,6 +113,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_196]: <https://www.riskbasedsecurity.com/2021/12/14/dark-web-roundup-november-2021/>
 [P_197]: <https://haveibeenpwned.com/PwnedWebsites#RoyalEnfield>
 [P_198]: <https://haveibeenpwned.com/PwnedWebsites#BlankMediaGames>
+[P_199]: <https://www.riskbasedsecurity.com/2021/01/25/shinyhunters-wave-3-one-hacker-exposes-over-125-million-credentials/>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -163,4 +165,5 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2020-redmart_lazada_sg.py]: <../parsers/2020-redmart_lazada_sg.py>
 [2021-travelio_com.py]: <../parsers/2021-travelio_com.py>
 [2020-royalenfield_com.py]: <../parsers/2020-royalenfield_com.py>
-[2021-blankmedia]games_com.py]: <../parsers/2021-blankmedia]games_com.py>
+[2021-blankmediagames_com.py]: <../parsers/2021-blankmediagames_com.py>
+[2021-rooter_io.py]: <../parsers/2021-rooter_io.py>
