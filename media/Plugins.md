@@ -5,6 +5,8 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
+| 2022 | [Exvagos.com Breach][P_204] | 2,122,415 | 094e9b51438dc32a8f6567d190c3b60eeb524584 | `exvagos.com_users.sql` | [2022-exvagos_com/py] | [Me :)] |
+| 2021 | [Ducks.org Breach][P_203] | 197,166 | 9c46b5d96ef2a794f4e33231e028d330a6962dc9 | `ducks.org.txt` | [2021-ducks_org.py] | [Me :)] |
 | 2021 | [Airtel.com Breach][P_201] | 42,044 | 9dfd9d16ac51c460e3ee2fd6630648d613e6c068 | 'Airtel_Email_pass.txt' | [2021-airtel_com.py] | [Me :)] |
 | 2021 | [Rooter.io Breach][P_199] | 518,079 | 337826c1dab3547cd1c528318ca7798ca5ab8aea | `rooter.sql` | [2021-rooter_io.py] | [Me :)] |
 | 2021 | [BlankMediaGames Breach][P_198] | 7,777,534 | 4f65d5836db9d7aaad23f9252f70041f0f473a82 | `BlankMediaGames.sql` | [2021-blankmediagames_com.py] | [Me :)] |
@@ -120,6 +122,8 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_200]: <https://haveibeenpwned.com/PwnedWebsites#YoteprestoCom>
 [P_201]: <https://www.thetechoutlook.com/news/technology/security/a-recently-leaked-data-from-2021-airtels-data-breach-shows-18k-people-having-same-password/>
 [P_202]: <https://haveibeenpwned.com/PwnedWebsites#Eskimi>
+[P_203]: <https://haveibeenpwned.com/PwnedWebsites#DucksUnlimited>
+[P_204]: <https://breached.to/Thread-ExVagos-Database-Leaked-Download>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -176,3 +180,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2020-yotepresto_com.py]: <../parsers/2020-yotepresto_com.py>
 [2021-airtel_com.py]: <../parsers/2021-airtel_com.py>
 [2020-eskimi_com.py]: <../parsers/2020-eskimi_com.py>
+[2021-ducks_org.py]: <../parsers/2021-ducks_org.py>
