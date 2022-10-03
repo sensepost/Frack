@@ -5,6 +5,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
+| 2021 | [Airtel.com Breach][P_201] | 42,044 | 9dfd9d16ac51c460e3ee2fd6630648d613e6c068 | 'Airtel_Email_pass.txt' | [2021-airtel_com.py] | [Me :)] |
 | 2021 | [Rooter.io Breach][P_199] | 518,079 | 337826c1dab3547cd1c528318ca7798ca5ab8aea | `rooter.sql` | [2021-rooter_io.py] | [Me :)] |
 | 2021 | [BlankMediaGames Breach][P_198] | 7,777,534 | 4f65d5836db9d7aaad23f9252f70041f0f473a82 | `BlankMediaGames.sql` | [2021-blankmediagames_com.py] | [Me :)] |
 | 2021 | [Travelio.com Breach][P_196] | 327,963 | 39b91b82ecc7ad02fe6d04db9eb76c6b3d7f7c0e | `TRAVELIO.csv` | [2021-travelio_com.py] | [Me :)] |
@@ -116,6 +117,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_198]: <https://haveibeenpwned.com/PwnedWebsites#BlankMediaGames>
 [P_199]: <https://www.riskbasedsecurity.com/2021/01/25/shinyhunters-wave-3-one-hacker-exposes-over-125-million-credentials/>
 [P_200]: <https://haveibeenpwned.com/PwnedWebsites#YoteprestoCom>
+[P_201]: <https://www.thetechoutlook.com/news/technology/security/a-recently-leaked-data-from-2021-airtels-data-breach-shows-18k-people-having-same-password/>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -170,3 +172,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2021-blankmediagames_com.py]: <../parsers/2021-blankmediagames_com.py>
 [2021-rooter_io.py]: <../parsers/2021-rooter_io.py>
 [2020-yotepresto_com.py]: <../parsers/2020-yotepresto_com.py>
+[2021-airtel_com.py]: <../parsers/2021-airtel_com.py>

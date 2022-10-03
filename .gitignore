@@ -6,3 +6,4 @@ __pycache__/
 Todo.txt
 *.xlsx
 *.errors
+.DS_Store
