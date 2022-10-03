@@ -5,6 +5,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
+| 2022 | [Hjedd.com Breach][P_205] | 347,092 | 99e4611ba1c0b3786bf991a46c4d9e6c8feb1aef | 'Email_pass.txt' | [2022-hjedd_com.py] | [Me :)] |
 | 2022 | [Exvagos.com Breach][P_204] | 2,122,415 | 094e9b51438dc32a8f6567d190c3b60eeb524584 | `exvagos.com_users.sql` | [2022-exvagos_com/py] | [Me :)] |
 | 2021 | [Ducks.org Breach][P_203] | 197,166 | 9c46b5d96ef2a794f4e33231e028d330a6962dc9 | `ducks.org.txt` | [2021-ducks_org.py] | [Me :)] |
 | 2021 | [Airtel.com Breach][P_201] | 42,044 | 9dfd9d16ac51c460e3ee2fd6630648d613e6c068 | 'Airtel_Email_pass.txt' | [2021-airtel_com.py] | [Me :)] |
@@ -124,6 +125,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_202]: <https://haveibeenpwned.com/PwnedWebsites#Eskimi>
 [P_203]: <https://haveibeenpwned.com/PwnedWebsites#DucksUnlimited>
 [P_204]: <https://breached.to/Thread-ExVagos-Database-Leaked-Download>
+[P_205]: <https://breached.to/Thread-hjedd-Database-Leaked-Download>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -181,3 +183,5 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2021-airtel_com.py]: <../parsers/2021-airtel_com.py>
 [2020-eskimi_com.py]: <../parsers/2020-eskimi_com.py>
 [2021-ducks_org.py]: <../parsers/2021-ducks_org.py>
+[2022-exvagos_com.py]: <../parsers/2022-exvagos_com.py>
+[2022-hjedd_com.py]: <../parsers/2022-hjedd_com.py>
