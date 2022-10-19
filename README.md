@@ -2,6 +2,7 @@
 
 [![Twitter](https://img.shields.io/badge/twitter-Stingray__ZA-blue)](https://twitter.com/Stingray_ZA)
 [![Defcon](https://img.shields.io/badge/Defcon-29-blue)](https://forum.defcon.org/node/237235)
+[![Code style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 [![Plugins](/media/plugins.png)](media/Plugins.md)
 

@@ -7,3 +7,4 @@ Todo.txt
 *.xlsx
 *.errors
 .DS_Store
+*.bak
