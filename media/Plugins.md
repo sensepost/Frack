@@ -5,7 +5,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
-|  | []
+| 2022 | [Yavp.pl Breach][P_210] | 18,585 | 95d1408d433c5839ade43227f0098cec7e1b9b87 | `yavp.pl_e_p.txt` | [2022-yavp_pl.py] | [Me :)] |
 | 2022 | [Start.film Breach][P_207] | 7,455,793 | ee8e74c9ef9322ec67b7eaf14082804cf77fd7af | `data.csv` | [2022-start_film.py] | [Me :)] |
 | 2022 | [Wiredbucks.com Breach][P_206] | 915,035 | 75cccf4ad99abca7dde88f3c330152b20b287cb8 | `wiredbucks.com_combo.txt` | [2022-wiredbucks_com.py] | [Me :)] | 
 | 2022 | [Hjedd.com Breach][P_205] | 347,092 | 99e4611ba1c0b3786bf991a46c4d9e6c8feb1aef | 'Email_pass.txt' | [2022-hjedd_com.py] | [Me :)] |
@@ -134,6 +134,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_206]: <https://haveibeenpwned.com/PwnedWebsites#Start>
 [P_208]: <https://haveibeenpwned.com/PwnedWebsites#SlideTeam>
 [P_209]: <https://www.zdnet.com/article/paleohacks-data-leak-exposes-customer-records-password-reset-tokens/>
+[P_210]: <None://>
 
 
 [Me :)]: <https://github.com/StingraySA>
@@ -198,3 +199,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2022-start_film.py]: <../parsers/2022-start_film.py>
 [2021-slideteam_net.py]: <../parsers/2021-slideteam_net.py>
 [2021-paleohacks_com.py]: <../parsers/2021-paleohacks_com.py>
+[2022-yavp_pl.py]: <../parsers/2022-yavp_pl.py>
