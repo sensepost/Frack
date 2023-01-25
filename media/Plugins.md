@@ -5,6 +5,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
+| 2022 | [GGCorp.me][P_212] | 2,375,614 | 081c52a1ba3fdd9e1f253747ef04fb13f7e693f5 | `ggcorp.me_august2022.sql` | [2022-ggcorp_me.py] | [Me :)] |
 | 2022 | [Tryoncourse.com][P_211] | 23,410 | 021406e14a596bc765a5cc629270a4e45acad8a2 | `tryoncourse.csv` | [2022-tryoncourse_com.py] | [Me :)] |
 | 2022 | [Yavp.pl Breach][P_210] | 18,585 | 95d1408d433c5839ade43227f0098cec7e1b9b87 | `yavp.pl_e_p.txt` | [2022-yavp_pl.py] | [Me :)] |
 | 2022 | [Start.film Breach][P_207] | 7,455,793 | ee8e74c9ef9322ec67b7eaf14082804cf77fd7af | `data.csv` | [2022-start_film.py] | [Me :)] |
@@ -137,6 +138,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_209]: <https://www.zdnet.com/article/paleohacks-data-leak-exposes-customer-records-password-reset-tokens/>
 [P_210]: <None://>
 [P_211]: <https://news.kaduu.ch/2022/10/20/popular-north-american-crm-solution-has-been-hacked/>
+[P_212]: <https://haveibeenpwned.com/PwnedWebsites#GGCorp>
 
 
 [Me :)]: <https://github.com/StingraySA>
@@ -202,3 +204,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2021-slideteam_net.py]: <../parsers/2021-slideteam_net.py>
 [2021-paleohacks_com.py]: <../parsers/2021-paleohacks_com.py>
 [2022-yavp_pl.py]: <../parsers/2022-yavp_pl.py>
+[2022-ggcorp_me.py]: <../parsers/2022-ggcorp_me.py>
