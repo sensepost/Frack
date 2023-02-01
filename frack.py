@@ -27,6 +27,7 @@ from google.cloud.exceptions import NotFound
 from hurry.filesize import size, verbose
 from openpyxl import Workbook
 from tabulate import tabulate
+from collections import Counter
 
 currentlocation = os.path.dirname(os.path.abspath(__file__))
 
