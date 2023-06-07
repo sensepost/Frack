@@ -5,7 +5,8 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
-| 2023 | [Petstop.com][P_2015] | 45,153 | 6c7b90d59b2c2610d5f9e617613408fd4be5bb4f | `PETSTOP_FULL.sql` | [2023-petstop_com.py] | [Me :)] |
+| 2023 | [Radioitalia.it][P_216] | 203,850 | fe8e3485348aa77d832fa6b49ac98f5337b6dc7f | `radioitalia.txt`| [2023-radioitalia_it.py] | [Me :)] |
+| 2023 | [Petstop.com][P_215] | 45,153 | 6c7b90d59b2c2610d5f9e617613408fd4be5bb4f | `PETSTOP_FULL.sql` | [2023-petstop_com.py] | [Me :)] |
 | 2023 | [Showmax.com][P_213] | 27,428 | eb96fd5740691fc3fe5fd8b1c05f4896ea757f53 | `showmax_28k_parsed.txt` | [2023-showmax_com.py] | [Me :)] |
 | 2022 | [GGCorp.me][P_212] | 2,375,614 | 081c52a1ba3fdd9e1f253747ef04fb13f7e693f5 | `ggcorp.me_august2022.sql` | [2022-ggcorp_me.py] | [Me :)] |
 | 2022 | [Tryoncourse.com][P_211] | 23,410 | 021406e14a596bc765a5cc629270a4e45acad8a2 | `tryoncourse.csv` | [2022-tryoncourse_com.py] | [Me :)] |
@@ -147,6 +148,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_213]: <https://mybroadband.co.za/news/security/494655-showmax-passwords-for-over-27000-accounts-leaked-online.html>
 [P_214]: <https://haveibeenpwned.com/PwnedWebsites#MangaDex>
 [P_215]: <None://>
+[P_216]: <None://>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -218,3 +220,5 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2023-showmax_com.py]: <../parsers/2023-showmax_com.py>
 [2021-mangadex_org.py]: <../parsers/2021-mangadex_org.py>
 [2023-petstop_com.py]: <../parsers/2023-petstop_com.py>
+[2020-poloniex_com.py]: <../parsers/2020-poloniex_com.py>
+[2023-radioitalia_it.py]: <../parsers/2023-radioitalia_it.py>
