@@ -13,6 +13,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 | 2022 | [Wiredbucks.com Breach][P_206] | 915,035 | 75cccf4ad99abca7dde88f3c330152b20b287cb8 | `wiredbucks.com_combo.txt` | [2022-wiredbucks_com.py] | [Me :)] | 
 | 2022 | [Hjedd.com Breach][P_205] | 347,092 | 99e4611ba1c0b3786bf991a46c4d9e6c8feb1aef | `Email_pass.txt` | [2022-hjedd_com.py] | [Me :)] |
 | 2022 | [Exvagos.com Breach][P_204] | 2,122,415 | 094e9b51438dc32a8f6567d190c3b60eeb524584 | `exvagos.com_users.sql` | [2022-exvagos_com.py] | [Me :)] |
+| 2021 | [Mangadex.org Breach][P_214] | 542,093 | 16574c7590d218214d518e4ac5d29107440f5b36 | `MangaDex.org.txt` | [2021-mangadex_org.py] | [Me :)] |
 | 2021 | [Paleohacks.com Breach][P_209] | 59,878 | 58bc9c604899a8a218b60d4daf194d5e6db538d2 | `users.csv` | [2021-paleohacks_com.py] | [Me :)] |
 | 2021 | [SlideTeam.net Breach][P_208] | 1,463,526 | adc3e5fa5baccd657be89979da97a4415c1cd33b | `slideteam.net_1.4m_magento_april2020.csv` | [2021-slideteam_net.py] | [Me :)] |
 | 2021 | [Ducks.org Breach][P_203] | 197,166 | 9c46b5d96ef2a794f4e33231e028d330a6962dc9 | `ducks.org.txt` | [2021-ducks_org.py] | [Me :)] |
@@ -141,6 +142,8 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_210]: <None://>
 [P_211]: <https://news.kaduu.ch/2022/10/20/popular-north-american-crm-solution-has-been-hacked/>
 [P_212]: <https://haveibeenpwned.com/PwnedWebsites#GGCorp>
+[P_213]: <https://mybroadband.co.za/news/security/494655-showmax-passwords-for-over-27000-accounts-leaked-online.html>
+[P_214]: <https://haveibeenpwned.com/PwnedWebsites#MangaDex>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -210,3 +213,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2021-tambolabingo.com.py]: <../parsers/2021-tambolabingo.com.py>
 [2021-imf_org.py]: <../parsers/2021-imf_org.py>
 [2023-showmax_com.py]: <../parsers/2023-showmax_com.py>
+[2021-mangadex_org.py]: <../parsers/2021-mangadex_org.py>
