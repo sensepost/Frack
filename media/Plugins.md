@@ -5,6 +5,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
+| 2023 | [Showmax.com][P_213] | 27,428 | eb96fd5740691fc3fe5fd8b1c05f4896ea757f53 | `showmax_28k_parsed.txt` | [2023-showmax_com.py] | [Me :)] |
 | 2022 | [GGCorp.me][P_212] | 2,375,614 | 081c52a1ba3fdd9e1f253747ef04fb13f7e693f5 | `ggcorp.me_august2022.sql` | [2022-ggcorp_me.py] | [Me :)] |
 | 2022 | [Tryoncourse.com][P_211] | 23,410 | 021406e14a596bc765a5cc629270a4e45acad8a2 | `tryoncourse.csv` | [2022-tryoncourse_com.py] | [Me :)] |
 | 2022 | [Yavp.pl Breach][P_210] | 18,585 | 95d1408d433c5839ade43227f0098cec7e1b9b87 | `yavp.pl_e_p.txt` | [2022-yavp_pl.py] | [Me :)] |
@@ -208,3 +209,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2022-tryoncourse_com.py]: <../parsers/2022-tryoncourse_com.py>
 [2021-tambolabingo.com.py]: <../parsers/2021-tambolabingo.com.py>
 [2021-imf_org.py]: <../parsers/2021-imf_org.py>
+[2023-showmax_com.py]: <../parsers/2023-showmax_com.py>
