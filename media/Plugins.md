@@ -10,12 +10,12 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 | 2022 | [Yavp.pl Breach][P_210] | 18,585 | 95d1408d433c5839ade43227f0098cec7e1b9b87 | `yavp.pl_e_p.txt` | [2022-yavp_pl.py] | [Me :)] |
 | 2022 | [Start.film Breach][P_207] | 7,455,793 | ee8e74c9ef9322ec67b7eaf14082804cf77fd7af | `data.csv` | [2022-start_film.py] | [Me :)] |
 | 2022 | [Wiredbucks.com Breach][P_206] | 915,035 | 75cccf4ad99abca7dde88f3c330152b20b287cb8 | `wiredbucks.com_combo.txt` | [2022-wiredbucks_com.py] | [Me :)] | 
-| 2022 | [Hjedd.com Breach][P_205] | 347,092 | 99e4611ba1c0b3786bf991a46c4d9e6c8feb1aef | 'Email_pass.txt' | [2022-hjedd_com.py] | [Me :)] |
+| 2022 | [Hjedd.com Breach][P_205] | 347,092 | 99e4611ba1c0b3786bf991a46c4d9e6c8feb1aef | `Email_pass.txt` | [2022-hjedd_com.py] | [Me :)] |
 | 2022 | [Exvagos.com Breach][P_204] | 2,122,415 | 094e9b51438dc32a8f6567d190c3b60eeb524584 | `exvagos.com_users.sql` | [2022-exvagos_com.py] | [Me :)] |
 | 2021 | [Paleohacks.com Breach][P_209] | 59,878 | 58bc9c604899a8a218b60d4daf194d5e6db538d2 | `users.csv` | [2021-paleohacks_com.py] | [Me :)] |
 | 2021 | [SlideTeam.net Breach][P_208] | 1,463,526 | adc3e5fa5baccd657be89979da97a4415c1cd33b | `slideteam.net_1.4m_magento_april2020.csv` | [2021-slideteam_net.py] | [Me :)] |
 | 2021 | [Ducks.org Breach][P_203] | 197,166 | 9c46b5d96ef2a794f4e33231e028d330a6962dc9 | `ducks.org.txt` | [2021-ducks_org.py] | [Me :)] |
-| 2021 | [Airtel.com Breach][P_201] | 42,044 | 9dfd9d16ac51c460e3ee2fd6630648d613e6c068 | 'Airtel_Email_pass.txt' | [2021-airtel_com.py] | [Me :)] |
+| 2021 | [Airtel.com Breach][P_201] | 42,044 | 9dfd9d16ac51c460e3ee2fd6630648d613e6c068 | `Airtel_Email_pass.txt` | [2021-airtel_com.py] | [Me :)] |
 | 2021 | [Rooter.io Breach][P_199] | 518,079 | 337826c1dab3547cd1c528318ca7798ca5ab8aea | `rooter.sql` | [2021-rooter_io.py] | [Me :)] |
 | 2021 | [BlankMediaGames Breach][P_198] | 7,777,534 | 4f65d5836db9d7aaad23f9252f70041f0f473a82 | `BlankMediaGames.sql` | [2021-blankmediagames_com.py] | [Me :)] |
 | 2021 | [Travelio.com Breach][P_196] | 327,963 | 39b91b82ecc7ad02fe6d04db9eb76c6b3d7f7c0e | `TRAVELIO.csv` | [2021-travelio_com.py] | [Me :)] |
@@ -23,7 +23,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 | 2021 | [Imf.org Breach][P_192] | 844 | 62b4d62c4070f7e3c9b31fb68958760d7cc41883 | `imf.org.csv` | [2021-imf_org.py] | [Me :)] |
 | 2021 | [Tambolabingo.com Breach][P_191] | 18,064 | 272ad3f72692a7b06013a5827a675b35efae9481 | `tambola_email.txt` | [2021-tambolabingo.com.py] | [Me :)] |
 | 2021 | [Readnovel.com Breach][P_190] | 10,908,803 | ec6c014b17096592994cbb82c502d5b8b9694f0f | `Readnovel.com_Dehash.txt` | [2021-readnovel_com.py] | [Me :)] |
-| 2021 | [Farmadelivery.com.br Breach][P_189] | 902,306 | bbd8359980edbfe9adc31cf16c67f11bd87d7f95 | `FARMADELIVERY.COM.BR.txt' | [2021-farmadelivery_com.py] | [Me :)] |
+| 2021 | [Farmadelivery.com.br Breach][P_189] | 902,306 | bbd8359980edbfe9adc31cf16c67f11bd87d7f95 | `FARMADELIVERY.COM.BR.txt` | [2021-farmadelivery_com.py] | [Me :)] |
 | 2021 | [Smdepot.net Breach][P_185] | 322 | 8a35c58495ff2e4920fda189d1024d7d711aa2b3 | `Smdepot.net 2021.sql` | [2021-smdepot_net.py] | [Me :)] |
 | 2021 | [Thane.city Breach][P_184] | 18,440 | 3607a577329e3a52a540ee2cc76db3faea589981 | `thane.city - 2021-07-04.txt` | [2021-thane_city.py] | [Me :)] |
 | 2021 | [Dailyquiz.me Breach][P_182] | 10,875,573 | a08a93b5828ed61c09863e43e28d0f08a68ed221 | `dailyquiz.me2021.csv` | [2021-dailyquiz_me.py] | [Me :)] |
@@ -39,7 +39,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 | 2021 | [Nitro_PDF][P_152] | 77,082,678 | 50dbf53333ef77ef59cd170be4c33931e613b8d9 | `nitrocloud.tsv` | [2021-nitropdf_com.py] | [Me :)] |
 | 2021 | Not Confirmed | 35,376 | cf475b17a7ed3fee45d17ccb57763c7a5c99ad9d | `35k_Wish.com_2021_Stranded.txt` | [2021-wish_com.py] | [@leonjza] |
 | 2021 | [Thingyverse.com][P_183] | 2,079,128 | d6206521db1aebb8ccc628ee9c6f49142daf5ce4 | `thingiverse.com.sql` | [2020-thingiverse.com.py] | [Me :)] |
-| 2020 | [Eskimi.com][P_202] | 41 | 4d8e13f73ab4c7df3716608f6db9d8f8849531a6 | 'eskimi_dehash.txt' | [2020-eskimi_com.py] | Me :)] |
+| 2020 | [Eskimi.com][P_202] | 41 | 4d8e13f73ab4c7df3716608f6db9d8f8849531a6 | `eskimi_dehash.txt` | [2020-eskimi_com.py] | [Me :)] |
 | 2020 | [Yotepresto.com Breach][P_200] | 1,437,441 | 65e987e701d19ce2b85a8ea2203a0fbe7e18eb71 | `yotepresto_users.csv` | [2020-yotepresto_com.py] | [Me :)] |
 | 2020 | [Royalenfield.com Breach][P_197] | 279,962 | a7ba8c856ff1966ca0fee9a835ff660c98806024 | `49.205.181.100.re-node-db.users(royalenfield.com).json` | [2020-royalenfield_com.py] | [Me :)] |
 | 2020 | [RedMart.Lazada.sg Breach][P_195] | 919,526 | 07afd4d1f5aac2d142397f779ac26ee9bb2d9c12 | `Redmart.lazada.sg.txt` | [2020-redmart_lazada_sg.py] | [Me :)] |
@@ -134,12 +134,12 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_204]: <https://breached.to/Thread-ExVagos-Database-Leaked-Download>
 [P_205]: <https://breached.to/Thread-hjedd-Database-Leaked-Download>
 [P_206]: <https://haveibeenpwned.com/PwnedWebsites#Start>
+[P_207]: <None://>
 [P_208]: <https://haveibeenpwned.com/PwnedWebsites#SlideTeam>
 [P_209]: <https://www.zdnet.com/article/paleohacks-data-leak-exposes-customer-records-password-reset-tokens/>
 [P_210]: <None://>
 [P_211]: <https://news.kaduu.ch/2022/10/20/popular-north-american-crm-solution-has-been-hacked/>
 [P_212]: <https://haveibeenpwned.com/PwnedWebsites#GGCorp>
-
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -205,3 +205,6 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2021-paleohacks_com.py]: <../parsers/2021-paleohacks_com.py>
 [2022-yavp_pl.py]: <../parsers/2022-yavp_pl.py>
 [2022-ggcorp_me.py]: <../parsers/2022-ggcorp_me.py>
+[2022-tryoncourse_com.py]: <../parsers/2022-tryoncourse_com.py>
+[2021-tambolabingo.com.py]: <../parsers/2021-tambolabingo.com.py>
+[2021-imf_org.py]: <../parsers/2021-imf_org.py>
