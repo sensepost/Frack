@@ -5,6 +5,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
+| 2023 | [Youtech.fr][P_218] | 8,173 | b5db4c2f4a7463ac7fc88a621176ee376b21b7ba | `youtech.fr.sql` | [2023-youtech_fr.py] | [Me :)] |
 | 2023 | [RaidForums.com][P_217] | 478,515 | 90af7467d429c11f3d7d34f934f77ed1fdde96da | `raidforums.com.sql` | [2023-raidforums_com.py] | [Me :)] |
 | 2023 | [Radioitalia.it][P_216] | 203,850 | fe8e3485348aa77d832fa6b49ac98f5337b6dc7f | `radioitalia.txt`| [2023-radioitalia_it.py] | [Me :)] |
 | 2023 | [Petstop.com][P_215] | 45,153 | 6c7b90d59b2c2610d5f9e617613408fd4be5bb4f | `PETSTOP_FULL.sql` | [2023-petstop_com.py] | [Me :)] |
@@ -151,6 +152,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_215]: <None://>
 [P_216]: <None://>
 [P_217]: <https://haveibeenpwned.com/PwnedWebsites#RaidForums>
+[P_218]: <None://>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -225,3 +227,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2020-poloniex_com.py]: <../parsers/2020-poloniex_com.py>
 [2023-radioitalia_it.py]: <../parsers/2023-radioitalia_it.py>
 [2023-raidforums_com.py]: <../parsers/2023-raidforums_com.py>
+[2023-youtech_fr.py]: <../parsers/2023-youtech_fr.py>
