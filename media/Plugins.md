@@ -5,6 +5,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 
 | Year | Breach | Lines | SHA-1 | Filename | Plugin | Kudos |
 | ---- | ------ |------ | ----- | -------- | ------ | ----- |
+| 2023 | [firmart.de][P_221] | 214489 | 0e340a0ec68737bd2493e40529b25131d9204100 | `Firmart_EP_Dehash - Germany - Firmart.de.txt` | [2023-firmart_de.py] | [Me :)] |
 | 2023 | [Estoreko.com][P_219] | 516,530 | 44ee7889c7e211affa74777c65ba763328cc2c42 | `revupas_users.sql` | [2023-estoreko_com.py] | [Me :)] |
 | 2023 | [Youtech.fr][P_218] | 8,173 | b5db4c2f4a7463ac7fc88a621176ee376b21b7ba | `youtech.fr.sql` | [2023-youtech_fr.py] | [Me :)] |
 | 2023 | [RaidForums.com][P_217] | 478,515 | 90af7467d429c11f3d7d34f934f77ed1fdde96da | `raidforums.com.sql` | [2023-raidforums_com.py] | [Me :)] |
@@ -157,6 +158,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_218]: <None://>
 [P_219]: <None://>
 [P_220]: <https://haveibeenpwned.com/PwnedWebsites#ActMobile>
+[P_221]: <https://leakbase.io/threads/db-fitmart-de-dutch-fitness-217k-2023-leak.12014/>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
@@ -233,3 +235,4 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2023-raidforums_com.py]: <../parsers/2023-raidforums_com.py>
 [2023-youtech_fr.py]: <../parsers/2023-youtech_fr.py>
 [2023-estoreko_com.py]: <../parsers/2023-estoreko_com.py>
+[2023-firmart_de.py]: <../parsers/2023-firmart_de.py>
