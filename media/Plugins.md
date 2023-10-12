@@ -12,6 +12,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 | 2023 | [Radioitalia.it][P_216] | 203,850 | fe8e3485348aa77d832fa6b49ac98f5337b6dc7f | `radioitalia.txt`| [2023-radioitalia_it.py] | [Me :)] |
 | 2023 | [Petstop.com][P_215] | 45,153 | 6c7b90d59b2c2610d5f9e617613408fd4be5bb4f | `PETSTOP_FULL.sql` | [2023-petstop_com.py] | [Me :)] |
 | 2023 | [Showmax.com][P_213] | 27,428 | eb96fd5740691fc3fe5fd8b1c05f4896ea757f53 | `showmax_28k_parsed.txt` | [2023-showmax_com.py] | [Me :)] |
+| 2022 | [Udemy.com][P_223] | 267,082 | a351e34973aa81b90daf575bdfec62bea25b79c5 | `udemy.com 270k.txt` | [2022-udemy_com_270k.py] | [@Reelix] |
 | 2022 | [GGCorp.me][P_212] | 2,375,614 | 081c52a1ba3fdd9e1f253747ef04fb13f7e693f5 | `ggcorp.me_august2022.sql` | [2022-ggcorp_me.py] | [Me :)] |
 | 2022 | [Tryoncourse.com][P_211] | 23,410 | 021406e14a596bc765a5cc629270a4e45acad8a2 | `tryoncourse.csv` | [2022-tryoncourse_com.py] | [Me :)] |
 | 2022 | [Yavp.pl Breach][P_210] | 18,585 | 95d1408d433c5839ade43227f0098cec7e1b9b87 | `yavp.pl_e_p.txt` | [2022-yavp_pl.py] | [Me :)] |
@@ -19,6 +20,7 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 | 2022 | [Wiredbucks.com Breach][P_206] | 915,035 | 75cccf4ad99abca7dde88f3c330152b20b287cb8 | `wiredbucks.com_combo.txt` | [2022-wiredbucks_com.py] | [Me :)] | 
 | 2022 | [Hjedd.com Breach][P_205] | 347,092 | 99e4611ba1c0b3786bf991a46c4d9e6c8feb1aef | `Email_pass.txt` | [2022-hjedd_com.py] | [Me :)] |
 | 2022 | [Exvagos.com Breach][P_204] | 2,122,415 | 094e9b51438dc32a8f6567d190c3b60eeb524584 | `exvagos.com_users.sql` | [2022-exvagos_com.py] | [Me :)] |
+| 2021 | [Ticketcounter.nl][P_222] | 94,076 | c87c1251ecc9d4bad3a5f082337484688420278f | `TicketCounter.nl.csv` | [2021-ticketcounter_nl.py] | [@Reelix] |
 | 2021 | [Actmobile.com Breach][P_220] | 1,675,015 | 2dcb08330d61166541af4229ba54cd815919d050 | `ActMobile.com.parsed.txt` | [2021-actmobile_com.py] | [Me :)] |
 | 2021 | [Mangadex.org Breach][P_214] | 542,093 | 16574c7590d218214d518e4ac5d29107440f5b36 | `MangaDex.org.txt` | [2021-mangadex_org.py] | [Me :)] |
 | 2021 | [Paleohacks.com Breach][P_209] | 59,878 | 58bc9c604899a8a218b60d4daf194d5e6db538d2 | `users.csv` | [2021-paleohacks_com.py] | [Me :)] |
@@ -48,6 +50,8 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 | 2021 | [Nitro_PDF][P_152] | 77,082,678 | 50dbf53333ef77ef59cd170be4c33931e613b8d9 | `nitrocloud.tsv` | [2021-nitropdf_com.py] | [Me :)] |
 | 2021 | Not Confirmed | 35,376 | cf475b17a7ed3fee45d17ccb57763c7a5c99ad9d | `35k_Wish.com_2021_Stranded.txt` | [2021-wish_com.py] | [@leonjza] |
 | 2021 | [Thingyverse.com][P_183] | 2,079,128 | d6206521db1aebb8ccc628ee9c6f49142daf5ce4 | `thingiverse.com.sql` | [2020-thingiverse.com.py] | [Me :)] |
+| 2020 | [gamingmonk.com][P_225] | 9,574 | ea97b90c817d7d2532370c294002ec66b62de033 | `GaminhMonk_EP_Dehash.txt` | [2020-gamingmonk_com.py] | [@Reelix] |
+| 2020 | [TridentCryptoFund.com][P_224] | 182,262 | 0cf4fc830234dce6027753787b264912c8cf30ee | `Trident_EP_Dehash.txt` | [2020-tridentcryptofund_com.py] | [@Reelix] |
 | 2020 | [Poloniex.com Breach][P_216] | 951,400 | 8cbbfe5731878aa7a5ee8902dca81ef9c42c77f8 | `Poloniex.com_950k.txt` | [2020-poloniex_com.py] | [Me :)] |
 | 2020 | [Eskimi.com][P_202] | 41 | 4d8e13f73ab4c7df3716608f6db9d8f8849531a6 | `eskimi_dehash.txt` | [2020-eskimi_com.py] | [Me :)] |
 | 2020 | [Yotepresto.com Breach][P_200] | 1,437,441 | 65e987e701d19ce2b85a8ea2203a0fbe7e18eb71 | `yotepresto_users.csv` | [2020-yotepresto_com.py] | [Me :)] |
@@ -159,9 +163,15 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [P_219]: <None://>
 [P_220]: <https://haveibeenpwned.com/PwnedWebsites#ActMobile>
 [P_221]: <https://leakbase.io/threads/db-fitmart-de-dutch-fitness-217k-2023-leak.12014/>
+[P_222]: <None://>
+[P_223]: <None://>
+[P_224]: <None://>
+[P_225]: <None://>
+[P_226]: <https://haveibeenpwned.com/PwnedWebsites#MagicDuel>
 
 [Me :)]: <https://github.com/StingraySA>
 [@leonjza]: <https://github.com/leonjza>
+[@Reelix]: <https://github.com/Reelix>
 
 [2015-patreon_com.py]: <../parsers/2015-patreon_com.py>
 [2021-123rf_com.py]: <../parsers/2021-123rf_com.py>
@@ -236,3 +246,8 @@ Here we can keep track of the plugins and for which breach they are. :+1:
 [2023-youtech_fr.py]: <../parsers/2023-youtech_fr.py>
 [2023-estoreko_com.py]: <../parsers/2023-estoreko_com.py>
 [2023-firmart_de.py]: <../parsers/2023-firmart_de.py>
+[2021-ticketcounter_nl.py]: <../parsers/2021-ticketcounter_nl.py>
+[2022-udemy_com_270k.py]: <../parsers/2022-udemy_com_270k.py>
+[2020-tridentcryptofund_com.py]: <../parsers/2020-tridentcryptofund_com.py>
+[2020-gamingmonk_com.py]: <../2020-gamingmonk_com.py>
+[2023-magicduel_com.py]: <../parsers/2023-magicduel_com.py>
