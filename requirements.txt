@@ -13,3 +13,4 @@ google-cloud-bigquery-storage
 google
 google.cloud
 pyorc
+db_dtypes

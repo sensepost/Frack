@@ -2,6 +2,7 @@
 __pycache__/
 *.orc
 /data
+/keys
 *.json
 Todo.txt
 *.xlsx
