@@ -4,7 +4,7 @@ from parsers import base
 
 class Parse(base.Parser):
     """
-        tridentep.com 2020 breach data parser
+        tridentcryptofund.com 2020 breach data parser
         Source File SHA-1: 0cf4fc830234dce6027753787b264912c8cf30ee  Trident_EP_Dehash.txt
         Good Lines: 182,262
     """
