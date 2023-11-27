@@ -31,10 +31,12 @@ from collections import Counter
 
 currentlocation = os.path.dirname(os.path.abspath(__file__))
 
-# Change this to reflect your creds file or just rename your creds file.
+# Change this to reflect the path to your creds file for the admin service account or just rename your creds file.
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = currentlocation + "/creds.json"
 
 # Change these to match your environment.
+
+# project_name = The project ID - Click the Down Arrow at the top left of your Google Cloud console
 project_name = "testingbigquery-306308"
 bucket_name = "ingestionbucket_frack"
 bucket_uri = "gs://ingestionbucket_frack/*.orc"
@@ -76,6 +78,8 @@ def main():
     )
     subparsers = parser.add_subparsers()
     parser.add_mutually_exclusive_group(required=False)
+
+    # query
     parser_query = subparsers.add_parser("query")
     parser_query.set_defaults(func=search)
     parser_query.add_argument(
@@ -84,6 +88,8 @@ def main():
     parser_query.add_argument(
         "-d", "--singledomain", help="Specify a single domain to search for."
     )
+
+    # db
     parser_db = subparsers.add_parser("db")
     parser_db.set_defaults(func=maintain)
     parser_db.add_argument(
@@ -122,6 +128,8 @@ def main():
         action="store_true",
         help="Save the output from these queries in an Excel sheet.",
     )
+
+    # parse
     parser_parse = subparsers.add_parser("parse")
     parser_parse.set_defaults(func=parse)
     parser_parse.add_argument(
@@ -175,27 +183,19 @@ def stats(what, export):
     sql_query = ""
     if what == "web":
         sql_query = (
+            f"""
+            SELECT DISTINCT site, Count(site) as number,
+            FROM `{project_name}.{table_id}`
+            GROUP BY site ORDER BY number desc
             """
-        SELECT DISTINCT site, Count(site) as number,
-        FROM `"""
-            + project_name
-            + "."
-            + table_id
-            + """` 
-        GROUP BY site ORDER BY number desc
-        """
         )
     elif what == "breach":
         sql_query = (
+            f"""
+            SELECT DISTINCT breach, Count(breach) as number,
+            FROM `{project_name}.{table_id}`
+            GROUP BY breach ORDER BY number desc 
             """
-        SELECT DISTINCT breach, Count(breach) as number,
-        FROM `"""
-            + project_name
-            + "."
-            + table_id
-            + """` 
-        GROUP BY breach ORDER BY number desc 
-        """
         )
 
     print("Querying Breach Database...")
@@ -203,6 +203,7 @@ def stats(what, export):
     client = bigquery.Client()
     tic = time.perf_counter()
     query_job = client.query(sql_query)
+
     # Wait for the job to complete
     results = query_job.result()
     toc = time.perf_counter()
@@ -337,14 +338,14 @@ def file_size(file_path):
 # Uploads the new .orc file to the ingestion bucket                                                     #
 #########################################################################################################
 def upload_blob(bucket_name, source_file_name):
-    print(txtcolors.OKGREEN + "Uploading File to storage bucket..." + txtcolors.ENDC)
+    print(txtcolors.OKGREEN + "Uploading File to cloud storage bucket..." + txtcolors.ENDC)
     storage_client = storage.Client()
     bucket = storage_client.get_bucket(bucket_name)
     blob = bucket.blob(source_file_name)
     blob.upload_from_filename(source_file_name)
     print(
         txtcolors.OKGREEN
-        + f"File uploaded to the {bucket_name} storage bucket."
+        + f"File uploaded to the {bucket_name} cloud storage bucket."
         + txtcolors.ENDC
     )
 
@@ -393,6 +394,7 @@ def validate_data(row, passbool):
 # that module to parse the file to .orc                                                                 #
 #########################################################################################################
 def parse(args):
+    # If -m
     if args.module:
         try:
             mod_src = importlib.import_module(f"parsers.{args.module}")
@@ -481,19 +483,13 @@ def parse(args):
             sys.stdout.write("\n")
             error_file.close()
             print(
-                txtcolors.OKBLUE
-                + "Size of import file: "
-                + file_size(args.inputfile)
-                + txtcolors.ENDC
+                txtcolors.OKBLUE + f"Size of import file: {file_size(args.inputfile)}" + txtcolors.ENDC
             )
             print(
                 txtcolors.OKGREEN + f"File written to: {destination}" + txtcolors.ENDC
             )
             print(
-                txtcolors.OKBLUE
-                + "ORC Size: "
-                + file_size(destination)
-                + txtcolors.ENDC
+                txtcolors.OKBLUE + f"ORC Size: {file_size(destination)}" + txtcolors.ENDC
             )
             if args.nodel:
                 os.remove(errors_file)
@@ -535,13 +531,9 @@ def search(args):
         domains = [args.singledomain.strip()]
 
     sql_search = (
-        """
+        f"""
     SELECT *
-    FROM `"""
-        + project_name
-        + "."
-        + table_id
-        + """` 
+    FROM `{project_name}.{table_id}` 
     WHERE UPPER(domain) = UPPER("""
         + '"'
         + '") OR UPPER(domain)=UPPER("'.join(domains)
@@ -580,24 +572,14 @@ def search(args):
 def splash():
     print("")
     print(
-        txtcolors.OKGREEN + " ███████╗██████╗░░█████╗░░█████╗░██╗░░██╗" + txtcolors.ENDC
-    )
-    print(
-        txtcolors.OKGREEN + " ██╔════╝██╔══██╗██╔══██╗██╔══██╗██║░██╔╝" + txtcolors.ENDC
-    )
-    print(
-        txtcolors.OKGREEN + " █████╗░░██████╔╝███████║██║░░╚═╝█████═╝░" + txtcolors.ENDC
-    )
-    print(
-        txtcolors.OKGREEN + " ██╔══╝░░██╔══██╗██╔══██║██║░░██╗██╔═██╗░" + txtcolors.ENDC
-    )
-    print(
-        txtcolors.OKGREEN + " ██║░░░░░██║░░██║██║░░██║╚█████╔╝██║░╚██╗" + txtcolors.ENDC
-    )
-    print(
-        txtcolors.OKGREEN + " ╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝" + txtcolors.ENDC
-    )
-    print(txtcolors.OKGREEN + "    - By: William Vermaak " + txtcolors.ENDC)
+        txtcolors.OKGREEN + 
+        " ███████╗██████╗░░█████╗░░█████╗░██╗░░██╗\n"
+        " ██╔════╝██╔══██╗██╔══██╗██╔══██╗██║░██╔╝\n"
+        " █████╗░░██████╔╝███████║██║░░╚═╝█████═╝░\n"
+        " ██╔══╝░░██╔══██╗██╔══██║██║░░██╗██╔═██╗░\n"
+        " ██║░░░░░██║░░██║██║░░██║╚█████╔╝██║░╚██╗\n"
+        " ╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝\n"
+        "    - By: William Vermaak " + txtcolors.ENDC)
     print("")
 
 
@@ -608,7 +590,7 @@ def count_dataset():
     client = bigquery.Client()
     try:
         destination_table = client.get_table(table_id)
-        print("Current DB Consists of {:,} rows.".format(destination_table.num_rows))
+        print("Current DB consists of {:,} rows.".format(destination_table.num_rows))
         print(
             "Current DB Size {}".format(
                 size(destination_table.num_bytes, system=verbose)
@@ -648,7 +630,7 @@ def ingest_orc(delete):
         table = bigquery.Table(project_name + "." + table_id, schema=schema)
         table = client.create_table(table)  # API Request
         destination_table = client.get_table(table_id)
-    print("Current DB Consists of {:,} rows.".format(destination_table.num_rows))
+    print("Current DB consists of {:,} rows.".format(destination_table.num_rows))
     job_config = bigquery.LoadJobConfig(
         schema=schema,
     )
@@ -675,7 +657,7 @@ def ingest_orc(delete):
     print(f"Ingestion completed in {toc - tic:0.4f} seconds")
     print("Job has finished.")
     destination_table = client.get_table(table_id)
-    print("After Update DB Consists of {:,} rows.".format(destination_table.num_rows))
+    print("After Update DB consists of {:,} rows.".format(destination_table.num_rows))
     if delete:
         empty_bucket(bucket_name)
     sys.exit()
