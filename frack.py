@@ -764,11 +764,17 @@ def create_excel(csv_name, singledomain, passwords):
         if i not in unique_pass:
             unique_pass.append(i)
 
+    # Remove funky chars from the passwords
+    clean_uniques = clean_funky_chars(unique_pass)
+
     # Populate worksheet 3 with all the unique passwords for the domain.
-    unique_pass.sort()
-    for i in range(len(unique_pass)):
-        cellA = "A" + str(i + 2)
-        ws3[cellA] = unique_pass[i]
+    try:
+        clean_uniques.sort()
+        for i in range(len(clean_uniques)):
+            cellA = "A" + str(i + 2)
+            ws3[cellA] = clean_uniques[i]
+    except:
+        print("Some weird chars found in the passwords.")
 
     # If we're working with a single domain, rename the Excel sheet to that domain for
     # easier reference. If it's a list we'll just call it Breach_Data.xlsx
@@ -780,12 +786,17 @@ def create_excel(csv_name, singledomain, passwords):
     try:
         with open("temp.csv", "r") as f:
             for row in csv.reader(f):
-                ws1.append(row)
+                clean_row = clean_funky_chars(row)
+                ws1.append(clean_row)
         wb.save(dest_filename)
         print("File written to: ./" + dest_filename)
     except:
         print("Something bad happened while creating the Excel sheet!")
 
+def clean_funky_chars(input):
+    bad_char1 = '' # Ordinal value 4
+    sanitised = [sub.replace(bad_char1, '*snip*') for sub in input]
+    return sanitised
 
 if __name__ == "__main__":
     main()
