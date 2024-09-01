@@ -8,6 +8,8 @@
 
 ## What is Frack?
 
+# Note: This project is no longer maintained. A new fully offline version is on it's way and will be linked here as soon as it is finished :)
+
 Frack is my attempt at creating an end-to-end solution to store, manage and query your breach data. The tool has got a very basic workflow making it easy to use.
 
 ![WF](media/Frack_Workflow.jpg)
